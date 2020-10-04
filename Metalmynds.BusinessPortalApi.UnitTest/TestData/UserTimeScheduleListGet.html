@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<!-- saved from url=(0291)https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration -->
+<html lang="en" class=" svg webfonts overthrow-enabled"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<script>
+			!function () {
+				function supportsSVG() { return !!document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect }
+				if (supportsSVG()) document.documentElement.className += ' svg'
+			}()
+				
+			if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			  var msViewportStyle = document.createElement("style");
+			  msViewportStyle.appendChild(
+				document.createTextNode(
+				  "@-ms-viewport{width:auto!important}"
+				)
+			  );
+			  document.getElementsByTagName("head")[0].
+				appendChild(msViewportStyle);
+			}
+			
+			(function(document,navigator,standalone) {
+				// prevents links from apps from oppening in mobile safari
+				// this javascript must be the first script in your <head>
+				if ((standalone in navigator) && navigator[standalone]) {
+					var curnode, location=document.location, stop=/^(a|html)$/i;
+					document.addEventListener('click', function(e) {
+						curnode=e.target;
+						if(curnode.getAttribute('data-is-ajax') != "true") {
+							while (!(stop).test(curnode.nodeName)) {
+								curnode=curnode.parentNode;
+							}
+							// Condidions to do this only on links to your own app
+							// if you want all links, use if('href' in curnode) instead.
+							if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+								e.preventDefault();
+								location.href = curnode.href;
+							}
+						}
+						
+					},false);
+				}
+			})(document,window.navigator,'standalone');
+			
+			
+			var isMobile = {
+				Android: function() {
+					return navigator.userAgent.match(/Android/i);
+				},
+				BlackBerry: function() {
+					return navigator.userAgent.match(/BlackBerry/i);
+				},
+				iOS: function() {
+					return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+				},
+				Opera: function() {
+					return navigator.userAgent.match(/Opera Mini/i);
+				},
+				Windows: function() {
+					return navigator.userAgent.match(/IEMobile/i);
+				},
+				any: function() {
+					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+				}
+			};
+			if ( !isMobile.Windows() ) {
+				document.documentElement.className += ' webfonts';
+			} else {
+				document.documentElement.className += ' webfonts';
+			}
+		</script>				
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		
+		
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		
+		
+		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<meta name="msapplication-window" content="width=1024;height=768">
+		
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="shortcut icon" sizes="196x196" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/icon_196.png">
+		<link rel="shortcut icon" sizes="128x128" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/icon_128.png">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon-precomposed" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon.png">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-1536x2008.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-2048x1496.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" rel="apple-touch-startup-image">	
+
+		<link rel="shortcut icon" href="https://bp-ipcomms.bt.com/branding/bt/images/favicon.ico">
+		<title>
+			
+				
+				
+					Business Portal
+				
+			
+		</title>
+		
+		<!-- Bootstrap core CSS -->
+		<link href="./UserTimeScheduleListGet_files/bootstrap.min.css" rel="stylesheet">
+		<!-- Bootstrap switch CSS -->
+		<link href="./UserTimeScheduleListGet_files/bootstrap-switch.css" rel="stylesheet">
+		<!-- Bootstrap DateTimePicker CSS -->
+		<link href="./UserTimeScheduleListGet_files/bootstrap-datetimepicker.min.css" rel="stylesheet">
+		<!-- Bootstrap DateRangePicker CSS -->
+		<link href="./UserTimeScheduleListGet_files/daterangepicker-bs3.css" rel="stylesheet">
+		<!-- Data Tables CSS -->
+		<link href="./UserTimeScheduleListGet_files/jquery.dataTables.css" rel="stylesheet">
+		<!-- FooTable CSS -->
+		<link href="./UserTimeScheduleListGet_files/footable.core.min.css" rel="stylesheet">
+		<!-- Add2Home CSS -->
+		<link href="./UserTimeScheduleListGet_files/addtohomescreen.css" rel="stylesheet">
+		<!-- Bootstrap Tour -->
+		<link href="./UserTimeScheduleListGet_files/hopscotch.min.css" rel="stylesheet">
+		<!-- Select2 CSS -->
+		<link href="./UserTimeScheduleListGet_files/select2.min.css" rel="stylesheet">
+		<!-- Core Site styles -->
+		<link href="./UserTimeScheduleListGet_files/site.css" rel="stylesheet">
+		
+			<link rel="stylesheet" href="./UserTimeScheduleListGet_files/cookie.css" type="text/css">
+		
+		<!-- Theme styles -->
+		<link href="./UserTimeScheduleListGet_files/theme.css" rel="stylesheet">
+		<link href="./UserTimeScheduleListGet_files/icons.css" rel="stylesheet">
+		<link href="./UserTimeScheduleListGet_files/icheck.css" rel="stylesheet">    
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="/businessportal/assets/js/bootstrap/html5shiv.js"></script>
+		<script src="/businessportal/assets/js/bootstrap/respond.min.js"></script>
+		<![endif]-->
+		<script src="./UserTimeScheduleListGet_files/jquery-1.10.2.min.js.download"></script>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		
+		<script> 
+			var analyticsAPIKey = '';
+			if (analyticsAPIKey != "") {
+				window.dataLayer = window.dataLayer || [];
+			}
+			
+			function gtag(){dataLayer.push(arguments);}
+			
+			if (analyticsAPIKey != "") {
+				gtag('js', new Date());
+			}
+		
+			function analyticsGetCustomMapping() {
+				return {
+					'dimension1' : 'userDomain',
+					'dimension2' : 'userName',
+					'dimension3' : 'customerName'
+				}
+			}
+			
+			function gaEvent(category, action, label) {
+				if (analyticsAPIKey != "") {
+					gtag('event', action, {
+						 'event_category' : category,
+						 'event_action' : action,
+						 'event_label' : label,
+						 'userDomain' : '',
+						 'userName' : '',
+						 'customerName' : ''
+					});
+				}
+			}
+			
+			function gaPageView(pageTitle) {
+				if (analyticsAPIKey != "") {
+					var config = {
+						 'userDomain' : '',
+						 'userName' : '',
+						 'customerName' : '',
+						 'custom_map' : analyticsGetCustomMapping()
+					};
+					if (pageTitle != null && pageTitle != "") {
+						config.page_title = pageTitle;
+					}
+					gtag('config', analyticsAPIKey, config);
+				}
+			}
+		</script>
+		
+	</head>
+	<body data-gr-c-s-loaded="true" style="">
+		<a class="sr-only" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#pageTitle">Skip to main content</a>
+
+
+
+	  
+
+	
+	
+		
+  
+	
+  
+  
+
+
+
+
+  
+  
+  
+  
+	<!-- use session as last resort since changing companies means it could be out of date -->
+	
+  
+  
+
+
+
+
+  
+	
+  
+  
+  
+
+
+
+
+  
+  
+  
+	
+  
+
+
+
+	
+
+
+
+	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="tab" aria-selected="false" aria-expanded="false" id="ui-collapse47">
+				<i class="icon-align-justify"></i>
+				<span class="sr-only">Expand Navbar</span>
+			</button>
+			<span class="logo"></span>
+		</div>
+		<div class="navbar-collapse collapse">		
+			
+				<p class="navbar-text">`
+					<span class="account-details">
+											
+							<span class="attribute">User: </span><span>Phone@bab.co.uk</span>&nbsp;&nbsp;&nbsp;
+								
+						<!-- 
+										
+							<span class="attribute">Account ID: </span><span>CV10088365</span>
+						
+						 -->
+					</span>
+				</p>
+				<div class="text-right">
+					
+						<p class="navbar-text helpLinkWrapper">
+							
+							<!--<a href="#" id="startSystemTour">Navigation Guide</a>-->
+						</p>
+					
+					
+					
+						
+							
+								<a target="_blank" href="http://www.bt.com/business/btcloudvoice/businessportalguide" class="btn btn-info navbar-btn">Help Setting Up</a>
+								<a target="_blank" href="http://www.bt.com/business/btcloudvoice/userguide" class="btn btn-info navbar-btn">Help Using</a>
+								<a target="_blank" href="http://www.bt.com/business/btcloudvoice/videos" class="btn btn-info navbar-btn">Help Videos</a>
+							
+							
+						
+					
+					
+					<a href="https://bp-ipcomms.bt.com/businessportal/logout.do" class="btn btn-warning navbar-btn">Logout <i class="icon-off"></i></a>
+				</div>
+				
+			
+		</div>
+	</div>
+	
+
+	
+	
+		
+	
+	
+	
+
+<input type="hidden" name="gsRegKey" id="gsRegKey" value="UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=ALCOHOLICS ANONYMOUS BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice Registration">
+
+
+
+	
+
+						
+
+
+
+
+	
+
+
+<div class="header-dropdown-wrapper">
+	
+	<div id="service-offering-dropdown" class="header-dropdown">
+	
+		<button class="btn closeDropDown" type="button"><i class="icon-remove"></i> Close</button>
+	
+		<div id="serviceOfferingDropdown" class="emptyDiv"></div>
+	</div>
+	
+	
+	<div class="header-dropdown-buttons">
+		
+		
+			<button id="service-offering" type="button" class="btn">
+				Service Offerings
+				<i class="icon-book"></i>
+			</button>
+		
+		
+		
+	</div>
+</div>
+
+<script>
+
+var immediateSubmission = false;
+
+$(document).ready(function() {
+	
+	var oldView = '';
+	var oldViewLevel2 = '';
+
+
+	$("#service-offering").click(function(e) {
+	  e.stopPropagation();
+	  $("#global-search-dropdown").slideUp("fast");
+	  $("#global-search").children("i").removeClass('icon-chevron-up');
+	  $("#global-search").children("i").addClass('icon-search');
+	  
+	  $(this).children("i").toggleClass('icon-book');
+	  $(this).children("i").toggleClass('icon-chevron-up');
+	  $("#service-offering-dropdown").slideToggle( "fast");
+	
+	  if ($(this).children("i").hasClass('icon-chevron-up') && $("#serviceOfferingDropdown").hasClass('emptyDiv')){
+		  var sodurl = "/businessportal/customServices/BusinessVoIP/getserviceofferingdropdown.do";
+		  $.ajax({
+				url : sodurl,
+				type: "GET",
+				data : {serviceOfferinglevel: 'User'},
+				success: function(data, textStatus, jqXHR) {		
+					$("#serviceOfferingDropdown").removeClass('emptyDiv').html(data);
+				}
+			});
+	  }
+	  
+	});
+
+	$("#global-search").click(function(e) {
+
+	  e.stopPropagation();
+	  $("#service-offering-dropdown").slideUp("fast");
+	  $("#service-offering").children("i").removeClass('icon-chevron-up');
+	  $("#service-offering").children("i").addClass('icon-book');
+	  
+	  
+	  
+	  $(this).children("i").toggleClass('icon-search');
+	  $(this).children("i").toggleClass('icon-chevron-up');
+	  $("#global-search-dropdown").slideToggle( "fast", function() {
+		$("#globalSearchString").focus();
+	  });
+	});
+	
+	$(document).on('click','.selectPackage', function(e){
+		e.preventDefault();
+		var level = $(this).data("level");
+		$.ajax({
+			url : $(this).prop('href'),
+			type: "GET",
+			data : {},
+			success: function(data, textStatus, jqXHR) {		    	
+				if("level2" == level){
+					oldViewLevel2 = $("#service-offering-dropdown").html();
+				}
+				else{
+					oldView = $("#service-offering-dropdown").html();
+				}
+				$("#service-offering-dropdown").hide().html(data).fadeIn();
+				
+				$('html, body').animate({
+					scrollTop: 0}, 500);
+			}
+		});
+	});
+	
+	$(document).on('click','#serviceOfferingReturn', function(event){
+		$("#loading").hide();
+		$("#service-offering-dropdown").hide().html(oldView).fadeIn();
+		event.stopPropagation();
+	});
+	
+	$(document).on('click','.closeDropDown', function(event){
+		closeDropDowns();
+	});
+	
+	$(document).on('click','#serviceOfferingReturnLevel2', function(event){
+		$("#loading").hide();
+		$("#service-offering-dropdown").hide().html(oldViewLevel2).fadeIn();
+		event.stopPropagation();
+	});
+
+	$(document).on('click','.clickableRow', function(event){
+		window.document.location = $(this).attr("href");
+	});
+
+	(function($) {
+		$.fn.normalkeypress = function(onNormal, onSpecial) {
+			this.bind('keydown keypress keyup', (function() {
+				var keyDown = {}, // keep track of which buttons have been pressed
+					lastKeyDown;
+				return function(event) {
+					if (event.type == 'keydown') {
+						keyDown[lastKeyDown = event.keyCode] = false;
+						return;
+					}
+					if (event.type == 'keypress') {
+						keyDown[lastKeyDown] = event; // this keydown also triggered a keypress
+						return;
+					}
+
+					// 'keyup' event
+					var keyPress = keyDown[event.keyCode];
+					if ( keyPress &&
+						 ( ( ( keyPress.which >= 32 // not a control character
+							   //|| keyPress.which == 8  || // \b
+							   //|| keyPress.which == 9  || // \t
+							   //|| keyPress.which == 10 || // \n
+							   //|| keyPress.which == 13    // \r
+							   ) &&
+							 !( keyPress.which >= 63232 && keyPress.which <= 63247 ) && // not special character in WebKit < 525
+							 !( keyPress.which == 63273 )                            && //
+							 !( keyPress.which >= 63275 && keyPress.which <= 63277 ) && //
+							 !( keyPress.which === event.keyCode && // not End / Home / Insert / Delete (i.e. in Opera < 10.50)
+								( keyPress.which == 35  || // End
+								  keyPress.which == 36  || // Home
+								  keyPress.which == 45  || // Insert
+								  keyPress.which == 46  || // Delete
+								  keyPress.which == 144    // Num Lock
+								  )
+								)
+							 ) ||
+						   keyPress.which === undefined // normal character in IE < 9.0
+						   ) &&
+						 keyPress.charCode !== 0 // not special character in Konqueror 4.3
+						 ) {
+
+						// Normal character
+						if (onNormal) onNormal.call(this, keyPress, event);
+					} else {
+						// Special character
+						if (onSpecial) onSpecial.call(this, event);
+					}
+					delete keyDown[event.keyCode];
+				};
+			})());
+		};
+	})(jQuery);
+	
+	$("#globalSearchString").normalkeypress(function(e){
+		var searchString = $.trim($(this).val());
+		if(searchString.length > 2){
+			typewatch(function(){ performGlobalSearch('keyup', window.immediateSubmission);}, 500 );
+		} else {
+			$(".search-results-view").addClass('hidden');
+		}
+
+	});
+	
+	
+	$("#globalSearchForm").submit(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		var searchString = $("#globalSearchString").val();
+		if(searchString.length > 2){
+			window.immediateSubmission = true;
+			typewatch(function(){ performGlobalSearch('submit', window.immediateSubmission);}, 0 );
+		} else {
+			$(".search-results-view").addClass('hidden');
+		}
+		return false;
+	});
+	
+	
+	
+	$(".header-dropdown-wrapper").bind( "clickoutside", function(event){
+		closeDropDowns();
+	});
+	
+	$(".header-dropdown-wrapper").bind( "touchstartoutside", function(event){
+		closeDropDowns();
+	});
+});
+
+function closeDropDowns() {
+	$("#global-search-dropdown").slideUp( "fast");
+	$("#service-offering-dropdown").slideUp( "fast");
+	$("#service-offering").children("i").removeClass('icon-chevron-up');
+	$("#service-offering").children("i").addClass('icon-book');
+	$("#global-search").children("i").removeClass('icon-chevron-up');
+	$("#global-search").children("i").addClass('icon-search');
+}
+
+function performGlobalSearch(method, immediateSubmission){
+	if (immediateSubmission == true && method == 'keyup') {
+		window.immediateSubmission = false;
+		return false;
+	}
+	var gsRegKey = $("#gsRegKey").val();
+	var globalSearchUrl = "/businessportal/customServices/BusinessVoIP/performGlobalSearch.do?regKey=" + gsRegKey;
+	
+	$.ajax({
+		url : globalSearchUrl,
+		type: "POST",
+		data: {token:$("#globalSearchString").val()},
+		dataType: "json",
+		success: function(data, textStatus, jqXHR) {
+			//console.log(data);
+			var sitesTable = "";
+			var usersTable = "";
+			var br = "";
+			
+			if($(data.sitesFound).size() != 0){
+				sitesTable = 	"<h4>Sites</h4>" +
+								"<div class='table-responsive'><table class='table table-hover secondary'>" + 
+									"<tr>" +
+										"<th>" +
+											"Site Name" +
+										"</th>" +
+										"<th>" +
+										"</th>" +
+										/*"<th>" +
+											"Org ID" +
+										"</th>" +*/
+									"</tr>";
+				$(data.sitesFound).each(function(i, item){
+					sitesTable += 	"<tr>" +
+										"<td>";
+					if(item.url != null){
+						sitesTable +=		"<a href='" + item.url + "'>" +
+												item.siteName +
+											"</a>";
+					}else{
+						sitesTable +=	item.siteName;
+					}
+					
+					sitesTable +=		"</td>" +
+
+										"<td>";
+					if(item.url != null){
+						sitesTable +=		"<a href='" + item.url +"' class='btn btn-warning btn-sm pull-right'>" +
+												"<i class='icon-screenshot'></i> Select" + 
+											"</a>";
+					}
+					sitesTable +=		"</td>" +
+										/*"<td>" + 
+											item.orgId +
+										"</td>" +*/
+									"</tr>";
+				});
+				sitesTable += "</table></div>";
+			}
+			if($(data.sitesFound).size() != 0 && $(data.usersFound).size() != 0){
+				br = "<br/>"
+			}
+
+			if($(data.usersFound).size() != 0){
+				usersTable = 	"<h4>Users</h4>" +
+								"<div class='table-responsive-large'><table class='table table-hover secondary'>" +
+									"<tr>" +
+										"<th>" +
+											"Username" +
+										"</th>" +
+										"<th>" +
+											"First Name" +
+										"</th>" +
+										"<th>" +
+											"Surname" +
+										"</th>" +
+										"<th>" +
+											"Phone Number" +
+										"</th>" +
+										"<th>" +
+											"Site Name" +
+										"</th>" +
+										"<th>" +
+										"</th>" +
+										/*"<th>" +
+											"Org ID" +
+										"</th>" +*/
+									"</tr>";
+									
+				$(data.usersFound).each(function(i, item){
+					usersTable += 	"<tr>" +
+										"<td>";
+					if(item.url != null){
+						usersTable += 		"<a href='" + item.url + "'>" +
+												item.userName +
+											"</a>";
+					}else{
+						usersTable += item.userName;
+					}
+											
+					usersTable += 		"</td>" +
+										"<td>" + 
+											item.firstName +
+										"</td>" + 
+										"<td>" + 
+											item.lastName +
+										"</td>" + 
+										"<td>" + 
+											item.phoneNumber +
+										"</td>" + 
+										"<td>" + 
+											item.siteName +
+										"</td>" +
+										"<td>";
+					if(item.url != null){
+						usersTable +=		"<a href='" + item.url +"' class='btn btn-warning btn-sm pull-right'>" +
+												"<i class='icon-screenshot'></i> Select" + 
+											"</a>";
+					}
+											
+					usersTable +=		"</td>" +
+									"</tr>";
+									
+				});
+				usersTable += "</table></div>";
+			}
+			
+			if($(data.usersFound).size() == 0 && $(data.sitesFound).size() == 0) {
+				$(".search-results-view .rounded-box").html('<span class="error">No Results Found</span>');
+			} else {
+				$(".search-results-view .rounded-box").html(usersTable + br + sitesTable);
+			}
+
+			
+			$(".search-results-view").removeClass('hidden');
+		},
+		complete: function(jqXHR, textStatus) {
+			window.immediateSubmission = false;
+		}
+	});
+}
+
+var typewatch = function(){
+	var timer = 0;
+	return function(callback, ms){
+		clearTimeout (timer);
+		timer = setTimeout(callback, ms);
+	}  
+}();
+</script>
+	
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+<div class="announcement-banner">
+	
+</div>
+	
+<ul class="nav nav-tabs top-tab" role="tablist"><li class="dropdown pull-right tabdrop hide"><a class="dropdown-toggle" data-toggle="dropdown" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#"><i class="icon-align-justify"></i> <b class="caret"></b></a><ul class="dropdown-menu"></ul></li>	
+	
+	
+		
+		
+
+			
+				
+					
+				
+				
+				
+			
+			<!-- User menu -->
+			
+			<!-- Dashboard -->		
+			
+				
+				
+				
+					
+					
+					
+				
+			
+					
+			<li class="" role="presentation">
+				<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getuserdashboard.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-bar-chart"></i><span class="sr-only"> Dashboard</span><span class="sr-only"> </span></a>
+			</li>
+			
+			<!-- Features -->
+			
+				
+					
+					
+					
+				
+				
+				
+			
+			<li class="active" role="presentation">
+				<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getuserfeatures.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-rocket"></i> Features<span class="sr-only"> Link Active</span></a>
+			</li>
+			
+			<!-- Devices -->
+			
+				
+				
+				
+					
+										
+					
+				
+			
+			<li class="" role="presentation">
+				<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getuserdevicemanagement.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;userName=Phone&amp;SCAmappingFor=devices"><i class="icon-tablet"></i> Devices<span class="sr-only"> </span></a>
+			</li>
+			
+			<!-- Applications -->
+			
+				
+				
+				
+					
+					
+					
+				
+									
+			<li class="" role="presentation">
+				<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getuserapplications.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-th-large"></i> Applications<span class="sr-only"> </span></a>
+			</li>
+			
+			<!-- Profile -->
+			
+				
+				
+					
+					
+				
+			
+			
+			<li class="" role="presentation">
+				<a href="https://bp-ipcomms.bt.com/businessportal/sectionMyAccount.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-edit"></i> My Account<span class="sr-only"> </span></a>
+			</li>
+		
+	
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+	
+  
+  
+  
+
+
+
+
+<div class="page-wrapper">
+	<div class="row-offcanvas row-offcanvas-left">
+		
+				<div class="sidebar sidebar-offcanvas">
+					<!-- COMPANIES -->					
+					<!-- link to companies list -->		
+					
+					
+				</div>
+		
+		<div class="page" style="min-height: 0px;">	
+			
+			<div class="row">
+	<div class="col-sm-6  col-sm-push-6">
+		
+			<div class="object-select">					
+				<!-- company name -->
+				
+					<!-- customer selected -->
+					Company: <strong>ALCOHOLICS ANONYMOUS BAB</strong><br>
+				
+				
+				<!--  site name -->
+				
+				
+				<!-- employee name -->
+				
+					
+					
+						<!-- customer selected but not employee -->
+													
+					
+					
+				
+				
+				
+				<!-- group name -->
+				
+					
+						
+					
+					
+				
+				
+			</div>
+		
+	</div>
+	<div class="col-sm-6 col-sm-pull-6 titleWrapper">
+		
+		<h1 id="pageTitle" class="pageTitle">
+			Features
+
+			
+				
+					
+						›
+						Time Schedules
+					
+				
+			
+
+				
+		</h1>
+
+	</div>
+
+
+</div>
+
+
+	
+	
+		
+			
+				
+			
+		
+	
+
+
+
+			
+<div id="messageBox">
+	
+	
+</div>	
+			
+			<div class="well">
+				
+	<ol class="breadcrumb">
+		
+			
+			
+				
+				
+					<li><a class="action" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getuserfeatures.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration">Employee Features</a></li>
+				
+			
+		
+			
+			
+				
+					<li class="active">Time Schedules</li>
+				
+				
+			
+		
+	</ol>
+
+				<div class="rounded-box">
+					   
+					<div class="row">
+	<div class="col-sm-8">
+		<h4 class="subtitle">Time Schedules</h4>
+	</div>
+	
+	 
+	<div class="col-sm-4">
+		
+		<button class="btn btn-warning pull-right" id="startPageTour"><i class="icon-question"></i> Assistance</button>
+		<div class="clearfix"></div>
+		<br class="visible-xs">
+		
+	</div>
+	 
+	
+</div>
+
+<!--[if lt IE 9]>
+<style>
+	#startPageTour{display:none;}
+</style>
+<![endif]-->
+					
+					<form name="UserTimeScheduleForm" method="post" action="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do">
+						
+						<input type="hidden" name="SubmitButton" id="SubmitButton">
+						
+						<div class="row">
+							<div class="col-lg-2 col-md-3 col-sm-4 col-lg-push-10 col-md-push-9 col-sm-push-8">
+								<button value="New" name="newButton" type="button" class="btn btn-block btn-success" id="newButton"><i class="icon-plus"></i> Add</button>
+							</div>
+						</div>
+						
+						
+						
+						<span class="pagebanner withFooTable">28 Time Schedules found. Displaying 1 to 20</span>
+						<ul class="pagination paged pull-right"><li class="footable-page active"><a data-page="0" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#">1</a></li><li class="footable-page"><a data-page="1" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#">2</a></li><li class="footable-page-arrow"><a data-page="next" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#next">›</a></li><li class="footable-page-arrow"><a data-page="last" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#last">»</a></li></ul>
+						<div class="table-responsive overthrow">
+							<table class="table table-hover secondary footable-loaded footable" id="searchResults">
+								<thead>
+									<tr class="header">
+										<th>
+											<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox" name="selectall" id="selectAll" title="Check All For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+											
+										</th>
+										<th scope="col" id="editCol">
+											Schedule Name
+										</th>
+										<th>
+											Schedule Type
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+										
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="D Thursday 22:00 - Friday 10:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal">D Thursday 22:00 - Friday 10:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="A Wednesday 08:00 - 13:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=A+Wednesday+08%3A00+-+13%3A00&amp;scheduleType=Personal">A Wednesday 08:00 - 13:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="B Thursday 13:00 - 18:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=B+Thursday+13%3A00+-+18%3A00&amp;scheduleType=Personal">B Thursday 13:00 - 18:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="A Monday 10:00 - 14:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=A+Monday+10%3A00+-+14%3A00&amp;scheduleType=Personal">A Monday 10:00 - 14:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="A Saturday 10:00 - 14:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=A+Saturday+10%3A00+-+14%3A00&amp;scheduleType=Personal">A Saturday 10:00 - 14:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="B Friday 14:00 - 18:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=B+Friday+14%3A00+-+18%3A00&amp;scheduleType=Personal">B Friday 14:00 - 18:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="A Thursday 08:00 - 13:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=A+Thursday+08%3A00+-+13%3A00&amp;scheduleType=Personal">A Thursday 08:00 - 13:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="C Friday 18:00 - 22:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=C+Friday+18%3A00+-+22%3A00&amp;scheduleType=Personal">C Friday 18:00 - 22:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="D Wednesday 22:00 - Thursday 08:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Wednesday+22%3A00+-+Thursday+08%3A00&amp;scheduleType=Personal">D Wednesday 22:00 - Thursday 08:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="B Wednesday 13:00 - 18:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=B+Wednesday+13%3A00+-+18%3A00&amp;scheduleType=Personal">B Wednesday 13:00 - 18:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="B Saturday 14:00 - 18:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=B+Saturday+14%3A00+-+18%3A00&amp;scheduleType=Personal">B Saturday 14:00 - 18:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="A Tuesday 08:00 - 13:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=A+Tuesday+08%3A00+-+13%3A00&amp;scheduleType=Personal">A Tuesday 08:00 - 13:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="C Thursday 18:00 - 22:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=C+Thursday+18%3A00+-+22%3A00&amp;scheduleType=Personal">C Thursday 18:00 - 22:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="C Tuesday 18:00 - 22:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=C+Tuesday+18%3A00+-+22%3A00&amp;scheduleType=Personal">C Tuesday 18:00 - 22:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="D Sunday 22:00 Monday 10:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Sunday+22%3A00+Monday+10%3A00&amp;scheduleType=Personal">D Sunday 22:00 Monday 10:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="B Sunday 14:00 - 18:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=B+Sunday+14%3A00+-+18%3A00&amp;scheduleType=Personal">B Sunday 14:00 - 18:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="D Tuesday 22:00 - Wednesday 08:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Tuesday+22%3A00+-+Wednesday+08%3A00&amp;scheduleType=Personal">D Tuesday 22:00 - Wednesday 08:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="D Saturday 22:00 - Sunday 10:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Saturday+22%3A00+-+Sunday+10%3A00&amp;scheduleType=Personal">D Saturday 22:00 - Sunday 10:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="A Friday 10:00 - 14:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=A+Friday+10%3A00+-+14%3A00&amp;scheduleType=Personal">A Friday 10:00 - 14:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: table-row;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="C Sunday 18:00 - 22:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=C+Sunday+18%3A00+-+22%3A00&amp;scheduleType=Personal">C Sunday 18:00 - 22:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: none;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="C Saturday 18:00 - 22:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=C+Saturday+18%3A00+-+22%3A00&amp;scheduleType=Personal">C Saturday 18:00 - 22:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: none;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="A Sunday 10:00 - 14:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=A+Sunday+10%3A00+-+14%3A00&amp;scheduleType=Personal">A Sunday 10:00 - 14:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: none;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="D Monday 22:00 - Tuesday 08:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Monday+22%3A00+-+Tuesday+08%3A00&amp;scheduleType=Personal">D Monday 22:00 - Tuesday 08:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: none;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="B Monday 14:00 - 18:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=B+Monday+14%3A00+-+18%3A00&amp;scheduleType=Personal">B Monday 14:00 - 18:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: none;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="C Wednesday 18:00 - 22:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=C+Wednesday+18%3A00+-+22%3A00&amp;scheduleType=Personal">C Wednesday 18:00 - 22:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: none;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="B Tuesday 13:00 - 18:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=B+Tuesday+13%3A00+-+18%3A00&amp;scheduleType=Personal">B Tuesday 13:00 - 18:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: none;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="C Monday 18:00 - 22:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=C+Monday+18%3A00+-+22%3A00&amp;scheduleType=Personal">C Monday 18:00 - 22:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+												<tr style="display: none;">
+													<td>
+														
+															<div class="icheckbox_flat-green" style="position: relative;"><input type="checkbox" class="checkbox all" name="toDelete[]" value="D Friday 22:00 - Saturday 10:00" title="Check For Deletion" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+														
+													</td>
+													<td>
+														
+														<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Friday+22%3A00+-+Saturday+10%3A00&amp;scheduleType=Personal">D Friday 22:00 - Saturday 10:00
+															<i class="icon-pencil"></i></a>
+													</td>
+													<td>
+														
+															Employee
+														
+														
+													</td>
+												</tr>
+											
+										
+										
+									
+								</tbody>
+							</table>
+						</div>
+
+						
+						
+						<br>
+						
+						
+							<button value="Delete" type="button" disabled="disabled" class="btn btn-danger" id="deleteButton"><i class="icon-remove"></i> Delete</button>
+							<br><br>
+						
+						
+						<input type="hidden" name="regKey" value="UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=ALCOHOLICS ANONYMOUS BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice Registration" id="regKey">
+						<input type="hidden" id="SubmitButton" name="SubmitButton" value="Cancel">
+
+<div class="row" id="saveButtonRow">
+	<div class="col-lg-3 col-md-4 col-sm-12">
+		<button type="submit" class="btn btn-lg btn-block btn-warning" onclick="$(&#39;#SubmitButton&#39;).val(&#39;Cancel&#39;);" data-dismiss="modal">
+			<i class="icon-ban-circle"></i>
+			Cancel
+		</button>
+	</div>
+</div>
+
+						
+					</form>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+
+$(document).ready(function() {
+	
+	$('#searchResults').footable({
+		pageSize: 20,
+		pageNavigation: '.paged',
+		paginationInfo: '.pagebanner',
+		singularObject: 'Time Schedule',
+		pluralObject: 	'Time Schedules',
+		templateWithPagination: '#0 #1 found. Displaying #2 to #3',
+		templateWithoutPagination: '#0 #1 found. Displaying all #2'
+	});
+	
+	var numChecked = $('.all:checked').size();
+	if(numChecked > 0) {
+		$("#deleteButton").prop('disabled', false);
+	}
+	
+	var regKey = 'UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=ALCOHOLICS ANONYMOUS BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice Registration';
+	
+	$('.all').on('ifChecked', function(event){
+		numChecked++;
+		$("#deleteButton").prop('disabled', false);
+	});
+	
+	$('.all').on('ifUnchecked', function(event){
+		numChecked=numChecked-1;
+		if(numChecked == 0){
+			$("#deleteButton").prop('disabled', true);
+		}
+	});
+	
+	$('#selectAll').on('ifChecked', function(event){
+		$(".all:visible").iCheck('check');
+	});
+	
+	$('#selectAll').on('ifUnchecked', function(event){
+		$(".all:visible").iCheck('uncheck');
+	});
+	
+	
+
+	$("#deleteButton").click(function(e) {
+
+		if ( numChecked > 0 ){
+			$("#SubmitButton").val('Delete');
+			if(  confirm( "Deleting a Time Schedule will permanently remove it from the system. Click OK to continue." ) ) {
+				$(this).parents('form').attr('action', 'setusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration');
+				$(this).parents('form').submit();
+			}	
+			e.preventDefault();
+			return false;
+		} else {
+			alert("Click the box beside each Time Schedule you want to delete.");
+			e.preventDefault();
+			return false;
+		}
+		e.preventDefault();
+		return false;
+	});
+	
+	$("#newButton").click(function(e) {
+		e.preventDefault();
+		$(this).parents('form').attr('action', 'preaddusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DALCOHOLICS+ANONYMOUS+BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration');
+		$(this).parents('form').submit();
+	});
+	
+	var tour = {
+		  id: "timeSchedulesTour",
+		  showPrevButton: true,
+		  i18n:{
+			  nextBtn: "Next",
+			  prevBtn: "Back"
+		  },
+		  steps: [
+			{
+			  content: "Add a new Time Schedule set.",
+			  target: "#newButton",
+			  placement: "top"
+			},
+			{
+			  content: "Edit a Time Schedule. To modify a schedule, click the name of the schedule you wish to edit. The Time Schedule Modify page appears.",
+			  target: "#editCol",
+			  placement: "top"
+			},
+			{
+			  content: "Delete one or more Time Schedules. Please first select the ones you wish to delete by using the appropriate checkbox.",
+			  target: "#deleteButton",
+			  placement: "top"
+			},
+			{
+			  content: "Cancel and return to previous page.",
+			  target: "#saveButtonRow",
+			  placement: "top"  
+			}
+		  ]
+		};  
+		
+		$("#startPageTour").click(function() {
+			hopscotch.startTour(tour);
+		});
+	
+});
+</script>
+
+<script>
+	gaPageView('Features - Time Schedules');
+</script>
+
+			<div class="footer ">
+				
+				
+					<p class="footer-text text-right">
+						
+						
+						
+						
+						
+						
+						
+					</p>
+			</div>
+		
+		<img id="loading" class="loadingGif" alt="Loading" src="./UserTimeScheduleListGet_files/loading.gif">
+		 
+		<script src="./UserTimeScheduleListGet_files/jquery.validate.min.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/jquery.cookie.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/jquery.placeholder.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/bootstrap.min.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/bootstrap-accessibility.min.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/bootstrap-switch.min.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/jquery.dataTables.min.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/footable.min.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/footable.paginate.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/bootstrap-tabdrop.js.download"></script>
+		
+		<script src="./UserTimeScheduleListGet_files/overthrow.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/jquery.ba-outside-events.min.js.download"></script>
+		<!--[if !IE]><!--><script src="./UserTimeScheduleListGet_files/addtohomescreen.min.js.download"></script><!--<![endif]-->
+		<script src="./UserTimeScheduleListGet_files/hopscotch.min.js.download"></script>
+		<script src="./UserTimeScheduleListGet_files/select2.full.min.js.download"></script>
+
+		
+			
+			
+				<script src="./UserTimeScheduleListGet_files/jquery.icheck.min.js.download"></script>
+				<script>
+					$(document).ready(function() {
+						$('input.radio, input.checkbox').iCheck({
+							checkboxClass: 'icheckbox_flat-green',  
+							radioClass: 'iradio_flat-green'
+						});
+					});
+				</script>
+			
+		
+		
+		<script src="./UserTimeScheduleListGet_files/site.js.download"></script>
+		<script>
+		
+		$(document).ready(function() {
+			
+			
+			$('[data-toggle=offcanvas]').click(function() {
+				
+				$('.row-offcanvas-inner').toggleClass('active');
+			});
+
+			$("form:not(.withoutSpinner)").on("submit", showSpinner);
+			
+			$(".make-switch").bootstrapSwitch('setOnLabel', 'On');
+			$(".make-switch").bootstrapSwitch('setOffLabel', 'Off');
+			
+			$(".has-switch").on('switch-change', function (e, r) {
+				$(this).attr('aria-checked', r.value.toString());		    
+			});
+			$(".has-switch").each(function() {
+				$(this).attr('role', 'checkbox');
+				$(this).attr('aria-checked', $(this).bootstrapSwitch('status').toString());
+			});
+			
+			if($(".sidebar a").size() > 0) {
+				var startX = 0;
+				var startY = 0;
+				
+				var endX = 0;
+				var endY = 0;
+				
+				var buffer = 30;
+				
+				window.swiping = false;
+				
+				
+				$('.row-offcanvas').on("touchstart", function(ev) {
+					var e = ev.originalEvent;
+					startX = e.touches[0].clientX;
+					startY = e.touches[0].clientY;
+					
+					var sidebarLeft = $('.sidebar').offset().left+$('.sidebar').width()-buffer;
+					
+					
+					if($(this).hasClass('active')) {
+						var sidebarRight = $(window).width();
+					} else {
+						var sidebarRight = buffer;
+					}
+					
+					window.swiping = false;
+					
+					if(startX >= sidebarLeft && startX <= sidebarRight && !$(e.changedTouches[0].target).hasClass('sidebar-expander') && !$(e.changedTouches[0].target).hasClass('icon-align-justify') && $(window).width() <= 768) {
+						window.swiping = true;
+					} else {
+						window.swiping = false;
+					}
+				});
+				
+				$('.row-offcanvas').on("touchmove", function(ev) {
+					var e = ev.originalEvent;
+					endX = e.touches[0].clientX;
+					endY = e.touches[0].clientY;
+					
+					if(Math.abs(endX-startX)>Math.abs(endY-startY)) {
+						if(window.swiping && endX<=80 && endX>=0) {
+							e.preventDefault();
+							$(this).css({left : endX});
+							$(this).css('-webkit-transition', 'none');
+							$(this).css('-moz-transition', 'none');
+							$(this).css('transition', 'none');
+						}
+					}
+					
+					
+			
+			
+			
+				});
+				
+				$('.row-offcanvas').on("touchend", function(ev) {
+
+					if(window.swiping) {
+						window.swiping=false;
+						
+						if($(this).hasClass('active')) {
+							var triggerPoint = 50;
+						} else {
+							var triggerPoint = 30;
+						}
+						
+						if(endX < triggerPoint) {
+							
+							$(this).stop().animate({left : 0}, 'fast', null, function() {
+								$(this).css('left', '');
+								$(this).css('-webkit-transition', 'all 0.25s ease-out');
+								$(this).css('-moz-transition', 'all 0.25s ease-out');
+								$(this).css('transition', 'all 0.25s ease-out');
+								$(this).removeClass('active');
+								$('.row-offcanvas-inner').removeClass('active');
+							});
+
+						} else if (endX >= triggerPoint) {
+							$(this).stop().animate({left : 80}, 'fast', null, function() {
+								$(this).css('left', '');
+								$(this).css('-webkit-transition', 'all 0.25s ease-out');
+								$(this).css('-moz-transition', 'all 0.25s ease-out');
+								$(this).css('transition', 'all 0.25s ease-out');
+								$(this).addClass('active');
+								$('.row-offcanvas-inner').addClass('active');
+							});
+
+						}
+					}
+
+				});
+				
+
+			}
+			
+			
+		});
+		
+		$( document ).ajaxError(function( event, jqxhr, settings, exception ) {
+			if(jqxhr.status === 401) {
+				alert("Please sign in. (Your session may have expired.)");
+				window.location.replace("/businessportal");
+			} else if (jqxhr.status === 0) {
+				alert("Unable to connect to server. Please check your connection.");
+			}
+		});
+		
+		$(document).ajaxStart(function () {
+			showSpinner();
+		}).ajaxStop(function () {
+			$("#loading").hide();
+		});
+		
+		
+		function showSpinner() {
+			$("#loading").remove();
+			$('body').append('<img id="loading" class="loadingGif" style="display:block;" alt="Loading" src="/branding/bt/images/loading.gif" />');
+		}
+
+		</script>
+		<!--[if !IE]><!-->
+			<script src="./UserTimeScheduleListGet_files/addtohome.js.download" type="text/javascript"></script>
+		<!--<![endif]-->
+		
+			
+				<script src="./UserTimeScheduleListGet_files/jquery-migrate-1.2.1.js.download" type="text/javascript"></script>
+				<script src="./UserTimeScheduleListGet_files/cookie.js.download" type="text/javascript"></script>
+			
+			
+		
+	
+
+
+<div id="cookiesToolbar"><div id="cookiesToolbarContainer"><ul><li class="iconNeccesary"><a class="cookieTip active" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#strictlyNeccesaryTooltip">Strictly necessary</a></li><li class="iconPerformance"><a class="cookieTip active" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#performanceTooltip">Performance</a></li><li class="iconFunctional"><a class="cookieTip active" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#functionalTooltip">Functional</a></li><li class="iconSharing"><a class="cookieTip active" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#sharingTooltip">Sharing &amp; Targeting</a></li></ul><p><a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#" class="cookieLightbox" rel="yourCookieSettings">Change cookie settings</a></p><span id="cookiesHelp"><a class="cookieTip" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#cookieHelpTooltip">Help</a></span></div></div><div id="cookieOverlay">&nbsp;</div><div id="yourCookieSettings"><a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#" id="close" title="">Close</a><h2>Your cookie settings</h2><form method="post" action="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#"><p>Cookies are very small text files that are stored on your computer when you visit some websites.</p><p>We use cookies to make our website easier for you to use. You can remove any cookies already stored on your computer, but these may prevent you from using parts of our website.</p><p>Use the slider below to see the different types of cookies you can choose to allow.</p><div id="cookieWrapper" class="clearfix"><div class="cookieContainer clearfix"><h2>Drag the slider across to change your cookie settings</h2><div class="cookieNecessaryPerformance"><input id="necessaryPerformance" type="checkbox" checked="true" name="necessaryPerformance"><label tabindex="0" for="necessaryPerformance">Strictly necessary &amp; Performance</label></div><div class="maskContainer"><ul class="cookieSlider"><li class="cookieFunctional"><input id="functional" type="checkbox" checked="true" name="functional"><label for="functional">Functional</label></li><li class="cookieSharing"><input id="sharingTargeting" type="checkbox" checked="true" name="sharingTargeting"><label for="sharingTargeting">Targeting</label></li></ul></div></div><div id="detailsContainer" aria-live="assertive" aria-atomic="true"><div id="details"><div class="neccesaryPerformanceList clearfix"><div class="detailsColumnWill"><h3 class="will">This website will:</h3><ul class="willList"><li>Remember what is in your shopping basket</li><li>Remember how far you are through an order</li></ul></div><div class="detailsColumnWillNot"><h3 class="willNot">This website will not:</h3><ul class="willNotList"><li>Allow you to share pages with social networks like Facebook</li><li>Allow you to comment on blogs</li><li>Send information to other websites so that advertising is more relevant to you</li><li>Remember your log-in details</li><li>Improve overall performance of the website</li><li>Provide you with live, online chat support</li></ul></div></div><div class="functionalList clearfix"><div class="detailsColumnWill"><h3 class="will">This website will:</h3><ul class="willList"><li>Remember what is in your shopping basket</li><li>Remember how far you are through an order</li><li>Remember your log-in details</li><li>Make sure you're secure when logged in to the website</li><li>Make sure the website looks consistent</li><li>Offer live chat support</li></ul></div><div class="detailsColumnWillNot"><h3 class="willNot">This website will not:</h3><ul class="willNotList"><li>Allow you to share pages with social networks like Facebook</li><li>Allow you to comment on blogs</li><li>Send information to other websites so that advertising is more relevant to you</li></ul></div></div><div class="sharingList clearfix"><div class="detailsColumnWill"><h3 class="will">This website will:</h3><ul class="willList"><li>Remember what is in your shopping basket</li><li>Remember how far you are through an order</li><li>Remember your log-in details</li><li>Make sure your logged in areas are secure</li><li>Offer live chat support</li><li>Make sure the website looks consistent</li><li>Allow you to share pages with social networks like Facebook</li><li>Allow you to comment on blogs</li><li>Send information to other websites so that advertising is more relevant to you</li></ul></div><div class="detailsColumnWillNot"><h3 class="willNot">This website will not:</h3></div></div></div></div></div><div id="cookieFooter"><p><a class="arrow" target="_blank" href="https://www.bt.com/static/includes/globalheader/cookies/more-about-cookies.html">Find out more about Cookies</a></p><div class="cookieSubmit"><p><a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#">Cancel</a></p><div class="cookieButton cookieButtonBlue buttonSelected"><input class="submitCookie" type="submit" value="Save and close"></div></div></div></form></div><div id="cookieNotification" style="display: none;"><p>The cookie settings on this website are set to 'allow all cookies' to give you the very best experience. If you continue without changing these settings, you consent to this - but if you want, you can change your settings at any time at the bottom of this page.</p><div id="cookieActions"><a class="cookieButton changeNow" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#">Change settings</a><a class="cookieButton lastButton" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice%20Registration#">No, thanks</a></div><p><a class="arrow" target="_blank" href="https://www.bt.com/static/includes/globalheader/cookies/more-about-cookies.html">Find out more about Cookies</a></p></div><div class="cookieTooltip" id="strictlyNeccesaryTooltip"><div class="inner"><p><strong>Strictly necessary cookies</strong></p><p>These cookies enable services you have asked for. This information is not used for advertising on other sites.</p></div></div><div class="cookieTooltip" id="performanceTooltip"><div class="inner"><p><strong>Performance cookies</strong></p><p>These cookies collect anonymous information on the pages visited. This information is not used for advertising on other sites.</p></div></div><div class="cookieTooltip" id="functionalTooltip"><div class="inner"><p><strong>Functional cookies</strong></p><p>These cookies remember choices you make to improve your experience. This information is not used for advertising on other sites.</p></div></div><div class="cookieTooltip" id="sharingTooltip"><div class="inner"><p><strong>Targeting cookies</strong></p><p>These cookies share information about your browsing habits with 3rd parties to help make advertising relevant to you and your interests.</p></div></div><div class="cookieTooltip" id="cookieHelpTooltip"><div class="inner"><p>Privacy settings allow you to enable or disable cookies. We use cookies to improve your experience on our website.</p></div></div></body></html>

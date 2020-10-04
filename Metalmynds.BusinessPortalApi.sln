@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metalmynds.BusinessPortalApi.Web", "Metalmynds.BusinessPortalApi.Web\Metalmynds.BusinessPortalApi.Web.csproj", "{9A3943A8-D120-4B03-B554-ABCB91E6C352}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metalmynds.BusinessPortalApi.Client", "Metalmynds.BusinessPortalApi.Client\Metalmynds.BusinessPortalApi.Client.csproj", "{5315E854-D32D-4401-9D39-FDBD3B955123}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metalmynds.BusinessPortalApi.Model", "Metalmynds.BusinessPortalApi.Model\Metalmynds.BusinessPortalApi.Model.csproj", "{7E81DB44-CD80-4718-BEE5-7E318C2F526D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metalmynds.BusinessPortalApi.UnitTest", "Metalmynds.BusinessPortalApi.UnitTest\Metalmynds.BusinessPortalApi.UnitTest.csproj", "{2F5B1B60-D895-4E37-B231-5A3506BCBC11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metalmynds.BusinessPortalApi.Client.Shell", "Metalmynds.BusinessPortalApi.Client.Shell\Metalmynds.BusinessPortalApi.Client.Shell.csproj", "{307B9B98-0470-4386-AE99-469DD9BE27C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A3943A8-D120-4B03-B554-ABCB91E6C352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A3943A8-D120-4B03-B554-ABCB91E6C352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A3943A8-D120-4B03-B554-ABCB91E6C352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A3943A8-D120-4B03-B554-ABCB91E6C352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5315E854-D32D-4401-9D39-FDBD3B955123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5315E854-D32D-4401-9D39-FDBD3B955123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5315E854-D32D-4401-9D39-FDBD3B955123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5315E854-D32D-4401-9D39-FDBD3B955123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E81DB44-CD80-4718-BEE5-7E318C2F526D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E81DB44-CD80-4718-BEE5-7E318C2F526D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E81DB44-CD80-4718-BEE5-7E318C2F526D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E81DB44-CD80-4718-BEE5-7E318C2F526D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F5B1B60-D895-4E37-B231-5A3506BCBC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5B1B60-D895-4E37-B231-5A3506BCBC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5B1B60-D895-4E37-B231-5A3506BCBC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5B1B60-D895-4E37-B231-5A3506BCBC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{307B9B98-0470-4386-AE99-469DD9BE27C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307B9B98-0470-4386-AE99-469DD9BE27C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307B9B98-0470-4386-AE99-469DD9BE27C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307B9B98-0470-4386-AE99-469DD9BE27C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FA7CC38-62EE-4D59-A810-E0077C626131}
+	EndGlobalSection
+EndGlobal

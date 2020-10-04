@@ -1,2 +1,2 @@
 # bpapi
-Business Portal Rest Api
+Restful API for configuring the BT Business Portal

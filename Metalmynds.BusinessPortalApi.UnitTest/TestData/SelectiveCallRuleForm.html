@@ -1,0 +1,671 @@
+﻿0fe8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- use session as last resort since changing companies means it could be out of date -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="CallForwardingSelectiveForm" method="post" action="/businessportal/customServices/BusinessVoIP/setcallforwardingselectiverule.do" class="form-horizontal" id="setCfsRuleForm">
+
+    <input type="hidden" name="oldDescription" value="ZZ Test Record ot Used" id="oldDescription">
+    <input type="hidden" name="operation" value="modify" id="operation">
+    <input type="hidden" name="enabled" value="false" id="enabled">
+    <input type="hidden" name="regKey" id="regKey" value="UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice Registration">
+    <input type="hidden" name="SubmitButton" id="SubmitButton">
+
+    <input type="hidden" id="phoneNumbersSize" value="0" />
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">
+
+
+
+            Edit Call Forwarding Selective Rule
+
+
+        </h4>
+    </div>
+
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="form-group">
+                    <label for="description" class="col-lg-3 col-md-3 control-label">
+                        <i class="icon-asterisk required" title="required"></i> Description
+                    </label>
+                    <div class="col-lg-9 col-md-9">
+                        <input type="text" id="description" placeholder="Description" value="ZZ Test Record ot Used" name="description" class="form-control required" />
+
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-lg-3 col-md-3 control-label">
+                        Forward to
+                    </label>
+                    <div class="col-lg-9 col-md-9">
+                        <label for="useDefaultForwardToNumber" class="control-label inline">
+                            <input type="radio" name="useDefaultForwardToNumber" value="true" checked="checked" onclick="enableTextField(  this.value);" class="radio checkboxnew" id="useDefaultForwardToNumber">
+                            Use Default Forward To Number/SIP URI
+                        </label>
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-lg-push-3 col-md-push-3">
+                        <label for="enableDefaultForwardToNumber" class="control-label inline-control-label">
+                            <input type="radio" name="useDefaultForwardToNumber" value="false" onclick="enableTextField(this.value);" class="radio checkboxnew" id="enableDefaultForwardToNumber">
+                            Use This Phone Number/SIP URI Instead
+                        </label>
+                        <div class="inline-form-control">
+                            <label class="sr-only" for="forwardToNumber">Phone Number/SIP URI</label>
+                            <input type="text" class="form-control" id="forwardToN umber" name="forwardToNumber" value="0800 123 122" maxlength="20" placeholder="Telephone Number / SIP URI" />
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 col-md-3 control-label" for="timeSched">
+                        Time Schedule
+                    </label>
+
+                    <div class="col-lg-9 col-md-9">
+                        <select name="newTimeSchedule" class="form-control" id="timeSched">
+                            <option value="D Thursday 22:00 - Friday 10:00Personal">
+                                D Thursday 22:00 - Friday 10:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="A Wednesday 08:00 - 13:00Personal">
+                                A Wednesday 08:00 - 13:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="B Thursday 13:00 - 18:00Personal">
+                                B Thursday 13:00 - 18:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="A Monday 10:00 - 14:00Personal">
+                                A Monday 10:00 - 14:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            0fe8
+
+                            <option value="A Saturday 10:00 - 14:00Personal">
+                                A Saturday 10:00 - 14:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="B Friday 14:00 - 18:00Personal">
+                                B Friday 14:00 - 18:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="A Thursday 08:00 - 13:00Personal">
+                                A Thursday 08:00 - 13:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="C Friday 18:00 - 22:00Personal">
+                                C Friday 18:00 - 22:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="D Wednesday 22:00 - Thursday 08:00Personal">
+                                D Wednesday 22:00 - Thursday 08:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="B Wednesday 13:00 - 18:00Personal">
+                                B Wednesday 13:00 - 18:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="B Saturday 14:00 - 18:00Personal">
+                                B Saturday 14:00 - 18:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="A Tuesday 08:00 - 13:00Personal">
+                                A Tuesday 08:00 - 13:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="C Thursday 18:00 - 22:00Personal">
+                                C Thursday 18:00 - 22:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="C Tuesday 18:00 - 22:00Personal">
+                                C Tuesday 18:00 - 22:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="D Sunday 22:00 Monday 10:00Personal">
+                                D Sunday 22:00 Monday 10:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="B Sunday 14:00 - 18:00Personal">
+                                B Sunday 14:00 - 18:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="D Tuesday 22:00 - Wednesday 08:00Personal">
+                                D Tuesday 22:00 - Wednesday 08:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="D Saturday 22:00 - Sunday 10:00Personal">
+                                D Saturday 22:00 - Sunday 10:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="A Friday 10:00 - 14:00Personal">
+                                A Friday 10:00 - 14:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="C Sunday 18:00 - 22:00Personal">
+                                C Sunday 18:00 - 22:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="C Saturday 18:00 - 22:00Personal">
+                                C Saturday 18:00 - 22:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="A Sunday 10:00 - 14:00Personal">
+                                A Sunday 10:00 - 14:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="D Monday 22:00 - Tuesday 08:00Personal">
+                                D Monday 22:00 - Tuesday 08:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="B Monday 14:00 - 18:00Personal">
+                                B Monday 14:00 - 18:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="C Wednesday 18:00 - 22:00Personal">
+                                C Wednesday 18:00 - 22:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="B Tuesday 13:00 - 18:00Personal">
+                                B Tuesday 13:00 - 18:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="C Monday 18:00 - 22:00Personal">
+                                C Monday 18:00 - 22:00
+
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="D Friday 22:00 - Saturday 10:00Personal">
+                                D Friday 22:00 - Saturday 10:00
+
+
+
+                                0fe8
+
+
+
+                                (Employee)
+                            </option>
+
+                            <option value="Every Day All DayPersonal" selected="selected">
+                                Every Day All Day
+
+
+
+
+
+                                (Employee)
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 col-md-3 control-label" for="holidaySched">
+                        Holiday Schedule
+                    </label>
+
+                    <div class="col-lg-9 col-md-9">
+                        <select name="newHolidaySchedule" class="form-control" id="holidaySched">
+                            <option value="ScotlandService Provider" selected="selected">
+                                Scotland
+
+
+
+
+                                (Company)
+                            </option>
+
+                            <option value="England & WalesService Provider">
+                                England &amp; Wales
+
+
+
+
+                                (Company)
+                            </option>
+
+                            <option value="Northern IrelandService Provider">
+                                Northern Ireland
+
+
+
+
+                                (Company)
+                            </option>
+
+                            <option value="NoneGroup">None</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br /
+
+
+
+                <input type="hidden" name="operation" value="modify">
+                <input type="hidden" name="description" value="ZZ Test Record ot Used">
+                <input type="hidden" name="oldDescription" value="ZZ Test Record ot Used">
+                <input type="hidden" name="useDefaultForwardToNumber" value="true">
+                <input type="hidden" name="forwardToNumber" value="">
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            Phone Numbers
+                        </p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-lg-3 col-md-3 control-label">
+                                Accept Calls From
+                            </label>
+                            <div class="col-lg-9 col-md-9">
+                                <label for="privateNumber" class="control-label">
+                                    <input type="radio" name="usePhoneNumbers" value="false" checked="checked" class="radio checkboxnew" id="privateNumber">
+                                    All Phone Numbers
+                                </label>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-lg-push-3 col-md-push-3">
+                                <label for="unknownNumber" class="control-label">
+                                    <input type="radio" name="usePhoneNumbers" value="true" class="radio checkboxnew" id="unknownNumber">
+                                    Only These Phone Numbers
+                                </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-lg-push-4 col-md-push-4 col-sm-11 col-xs-11 col-xs-push-1">
+                                <label for="privateNumbers" class="control-label">
+                                    <input type="checkbox" name="privateNumbers" value="on" class="checkbox checkboxnew" id="privateNumbers">
+                                    Private Numbers
+                                </label>
+                                <br />
+                                <label for="unknownNumbers" class="control-label">
+                                    <input type="checkbox" name="unknownNumbers" value="on" class="checkbox checkboxnew" id="unknownNumbers">
+                                    Unknown Numbers
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="well inner-well">
+                            <h5 class="subtitle">
+                                Specific Numbers
+                            </h5>
+
+                            <div class="form-group">
+                                <label for="maximunAllowedNumbers" class="col-lg-3 col-md-4 control-label">
+                                    Maximum Allowed
+                                </label>
+                                <div class="col-lg-8 col-md-8">
+                                    <label for="maximunAllowedNumbers" id="maximunAllowedNumbers" class="control-label">
+                                        12
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="addphone" class="col-lg-3 col-md-4 control-label">
+                                    Add Phone Number
+                                </label>
+                                <div class="col-lg-9 col-md-8">
+                                    <div class="input-group">
+                                        <input type="tel" class="form-control number" id="addphone" name="newPhoneNumber" value="" maxlength="20" placeholder="Telephone Number" />
+                                        <span class="input-group-btn">
+                                            <button name="addButtonPr
+0c81
+essed" id="addNewNumber" value="Add" class="btn btn-success" type="button" disabled="disabled" onclick="javascript:$('#setCfsRuleForm #SubmitButton').val('Add');">
+                                                <i class="icon-plus"></i> <label class="sr-only">Add</label>
+                                            </button>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class='table-responsive overthrow'>
+                                <table class="table secondary table-hover">
+                                    <thead>
+                                        <tr class="header">
+                                            <th scope="col">
+
+                                            </th>
+                                            <th scope="col">
+                                                Phone Number
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+
+
+                                        <tr>
+                                            <td colspan="2">
+                                                <span class="error">No Numbers Have Been Added Yet</span>
+                                            </td>
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <div class="row">
+
+
+
+
+
+
+
+
+
+
+            <div class="col-sm-4 col-sm-push-8">
+                <button type="submit" class="btn btn-success btn-block" id="saveButton" value="OK" name="okButton" onclick="javascript:$('#setCfsRuleForm #SubmitButton').val('Ok');"><i class="icon-ok"></i> Save</button>
+            </div>
+
+
+            <br class="visible-xs" />
+
+            <div class="col-sm-4 col-sm-pull-4">
+                <button type="button" class="btn btn-warning btn-block" data-dismiss="modal"><i class="icon-ban-circle"></i> Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script>
+
+    $(document).ready(function () {
+        $(".allModal").iCheck('uncheck');
+
+        var numCheckedModal = 0;
+
+        $(".checkboxnew").iCheck({
+            checkboxClass: 'icheckbox_flat-green',
+            radioClass: 'iradio_flat-green'
+        });
+
+        $(document).on('ifChecked', '.allModal', function (event) {
+            numCheckedModal++;
+            $("#setCfsRuleForm #deleteNumberButton").prop('disabled', false);
+        });
+
+
+        $(document).on('ifUnchecked', '.allModal', function (event) {
+            numCheckedModal = numCheckedModal - 1;
+            if (numCheckedModal == 0) {
+                $("#setCfsRuleForm #deleteNumberButton").prop('disabled', true);
+            }
+        });
+
+        $('#selectAllModal').on('ifChecked', function (event) {
+            $(".allModal").iCheck('check');
+        });
+
+        $('#selectAllModal').on('ifUnchecked', function (event) {
+            $(".allModal").iCheck('uncheck');
+        });
+
+        var phoneNumbersSize = $("#phoneNumbersSize").val();
+
+        if (phoneNumbersSize < 12) {
+            $("#setCfsRuleForm #addNewNumber").prop('disabled', false);
+        }
+
+        $("#deleteNumberButton").click(function (e) {
+
+            if (numCheckedModal > 0) {
+                $("#setCfsRuleForm #SubmitButton").val('Delete');
+                if (confirm("Deleting a Number will permanently remove it from the system. Are you sure you want to continue?")) {
+                    return true;
+                } else {
+                    e.preventDefault();
+                    return false;
+                }
+            } else {
+                alert("Please first select the Number you wish to delete.");
+            }
+            e.preventDefault();
+            return false;
+        });
+
+    });
+
+</script>
+
+
+
+
+0000

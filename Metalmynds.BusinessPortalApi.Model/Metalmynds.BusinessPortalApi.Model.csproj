@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Metalmynds.BusinessPortal.Api</RootNamespace>
+    <Authors>Metalmynds</Authors>
+    <Company>Metalmynds</Company>
+    <Product>Business Portal Api</Product>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>

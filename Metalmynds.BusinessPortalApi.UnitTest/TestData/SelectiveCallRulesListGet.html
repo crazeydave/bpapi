@@ -1,0 +1,2939 @@
+﻿0fe8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+		!function () {
+			function supportsSVG() { return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect }
+			if (supportsSVG()) document.documentElement.className += ' svg'
+		}()
+
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement("style");
+			msViewportStyle.appendChild(
+				document.createTextNode(
+					"@-ms-viewport{width:auto!important}"
+				)
+			);
+			document.getElementsByTagName("head")[0].
+				appendChild(msViewportStyle);
+		}
+
+		(function (document, navigator, standalone) {
+			// prevents links from apps from oppening in mobile safari
+			// this javascript must be the first script in your <head>
+			if ((standalone in navigator) && navigator[standalone]) {
+				var curnode, location = document.location, stop = /^(a|html)$/i;
+				document.addEventListener('click', function (e) {
+					curnode = e.target;
+					if (curnode.getAttribute('data-is-ajax') != "true") {
+						while (!(stop).test(curnode.nodeName)) {
+							curnode = curnode.parentNode;
+						}
+						// Condidions to do this only on links to your own app
+						// if you want all links, use if('href' in curnode) instead.
+						if ('href' in curnode && (curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host))) {
+							e.preventDefault();
+							location.href = curnode.href;
+						}
+					}
+
+				}, false);
+			}
+		})(document, window.navigator, 'standalone');
+
+
+		var isMobile = {
+			Android: function () {
+				return navigator.userAgent.match(/Android/i);
+			},
+			BlackBerry: function () {
+				return navigator.userAgent.match(/BlackBerry/i);
+			},
+			iOS: function () {
+				return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+			},
+			Opera: function () {
+				return navigator.userAgent.match(/Opera Mini/i);
+			},
+			Windows: function () {
+				return navigator.userAgent.match(/IEMobile/i);
+			},
+			any: function () {
+				return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			}
+		};
+		if (!isMobile.Windows()) {
+			document.documentElement.className += ' webfonts';
+		} else {
+			document.documentElement.className += ' webfonts';
+		}
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320" />
+
+
+	<meta http-equiv="cleartype" content="on">
+	<meta http-equiv="X-UA-ComDible" content="IE=edge" />
+
+	<meta name="msapplication-window" content="width=1024;height=768">
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" sizes="196x196" href="/branding/bt/images/touch-icons/icon_196.png">
+	<link rel="shortcut icon" sizes="128x128" href="/branding/bt/images/touch-icons/icon_128.png">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="apple-touch-icon" sizes="152x152" href="/branding/bt/images/touch-icons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/branding/bt/images/touch-icons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/branding/bt/images/touch-icons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/branding/bt
+0fe8
+/images/touch-icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/branding/bt/images/touch-icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/branding/bt/images/touch-icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="/branding/bt/images/touch-icons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon-precomposed" href="/branding/bt/images/touch-icons/apple-touch-icon.png">
+	<link href="/branding/bt/images/splash-screens/apple-touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+	<link href="/branding/bt/images/splash-screens/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="/branding/bt/images/splash-screens/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="/branding/bt/images/splash-screens/apple-touch-startup-image-768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" rel="apple-touch-startup-image" />
+	<link href="/branding/bt/images/splash-screens/apple-touch-startup-image-1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" rel="apple-touch-startup-image" />
+	<link href="/branding/bt/images/splash-screens/apple-touch-startup-image-1536x2008.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/branding/bt/images/splash-screens/apple-touch-startup-image-2048x1496.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+	<link rel="shortcut icon" href="/branding/bt/images/favicon.ico" />
+	<title>
+
+
+
+		Business Portal
+
+
+	</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/businessportal/assets/css/bootstrap/bootstrap.min.css?v=20180601" rel="stylesheet" />
+	<!-- Bootstrap switch CSS -->
+	<link href="/businessportal/assets/css/bootstrap-switch/bootstrap-switch.css?v=20180601" rel="stylesheet" />
+	<!-- Bootstrap DateTimePicker CSS -->
+	<link href="/businessportal/assets/css/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css?v=20180601" rel="stylesheet" />
+	<!-- Bootstrap DateRangePicker CSS -->
+	<link href="/businessportal/assets/css/bootstrap-daterangepicker/daterangepicker-bs3.css?v=20180601" rel="stylesheet" />
+	<!-- Data Tables CSS -->
+	<link href="/businessportal/assets/css/datatables/jquery.dataTables.css?v=20180601" rel="stylesheet" />
+	<!-- FooTable CSS -->
+	<link href="/businessportal/assets/css/footable/footable.core.min.css?v=20180601" rel="stylesheet" />
+	<!-- Add2Home CSS -->
+	<link href="/businessportal/assets/css/add2home/addtohomescreen.css?v=20180601" rel="stylesheet" />
+	<!-- Bootstrap Tour -->
+	<link href="/businessportal/assets/css/hopscotch/hopscotch.min.css?v=20180601" rel="stylesheet" />
+	<!-- Select2 CSS -->
+	<link href="/businessportal/assets/css/select2/select2.min.css?v=20180601" rel="stylesheet" />
+	<!-- Core Site styles -->
+	<link href="/businessportal/assets/css/bp/site.css?v=20180601" rel="stylesheet" />
+
+	<link rel="stylesheet" href="/branding/bt/css/cookie.css?v=20180601" type="text/css" />
+
+	<!-- Theme styles -->
+	<link href="/branding/bt/css/theme.css?v=20180601" rel="stylesheet" />
+	<link href="/branding/bt/css/icons.css?v=20180601" rel="stylesheet" />
+	<link href="/branding/bt/css/icheck.css?v=20180601" rel="stylesheet" />
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+			<script s
+	0fe8
+	rc="/businessportal/assets/js/bootstrap/html5shiv.js"></script>
+			<script src="/businessportal/assets/js/bootstrap/respond.min.js"></script>
+			<![endif]-->
+	<script src="/businessportal/assets/js/jquery/jquery-1.10.2.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+	<script>
+		var analyticsAPIKey = '';
+		if (analyticsAPIKey != "") {
+			window.dataLayer = window.dataLayer || [];
+		}
+
+		function gtag() { dataLayer.push(arguments); }
+
+		if (analyticsAPIKey != "") {
+			gtag('js', new Date());
+		}
+
+		function analyticsGetCustomMapping() {
+			return {
+				'dimension1': 'userDomain',
+				'dimension2': 'userName',
+				'dimension3': 'customerName'
+			}
+		}
+
+		function gaEvent(category, action, label) {
+			if (analyticsAPIKey != "") {
+				gtag('event', action, {
+					'event_category': category,
+					'event_action': action,
+					'event_label': label,
+					'userDomain': '',
+					'userName': '',
+					'customerName': ''
+				});
+			}
+		}
+
+		function gaPageView(pageTitle) {
+			if (analyticsAPIKey != "") {
+				var config = {
+					'userDomain': '',
+					'userName': '',
+					'customerName': '',
+					'custom_map': analyticsGetCustomMapping()
+				};
+				if (pageTitle != null && pageTitle != "") {
+					config.page_title = pageTitle;
+				}
+				gtag('config', analyticsAPIKey, config);
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<a class="sr-only" href="#pageTitle">Skip to main content</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- use session as last resort since changing companies means it could be out of date -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<i class="icon-align-justify"></i>
+				<span class="sr-only">Expand Navbar</span>
+			</button>
+			<span class="logo"></span>
+		</div>
+		<div class="navbar-collapse collapse">
+
+			<p class="navbar-text">
+				<span class="account-details">
+
+					<span class="attribute">User: </span><span>Phone@bab.co.uk</span>&nbsp;&nbsp;&nbsp;
+
+					<!--
+
+						<span class="attribute">Account ID: </span><span>CV10088365</span>
+
+					 -->
+				</span>
+			</p>
+			<div class="text-right">
+
+				<p class="navbar-text helpLinkWrapper">
+
+					<!--<a href="#" id="startSystemTour">Navigation Guide</a>-->
+				</p>
+
+
+
+
+
+				<a target="_blank" href="http://www.bt.com/business/btcloudvoice/businessportalguide" class="btn btn-info navbar-btn">Help Setting Up</a>
+				<a target="_blank" href="http://www.bt.com/business/btcloudvoice/userguide" class="btn btn-info navbar-btn">Help Using</a>
+				<a target="_blank" href="http://www.bt.com/business/btcloudvoice/videos" class="btn btn-info navbar-btn">Help Videos</a>
+
+
+
+
+
+				<a href="/businessportal/logout.do" class="btn btn-warning navbar-btn">Logout <i class="icon-off"></i></a>
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<input type="hidden" name="gsRegKey" id="gsRegKey" value='UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice Registration' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="header-dropdown-wrapper">
+
+		<div id="service-offering-dropdown" class="header-dropdown">
+
+			<button class="btn closeDropDown" type="button"><i class="icon-remove"></i> Close</button>
+
+			<div id="serviceOfferingDropdown" class="emptyDiv"></div>
+		</div>
+		<div 0fe8
+			 id="global-search-dropdown" class="header-dropdown">
+			<button class="btn closeDropDown" type="button"><i class="icon-remove"></i> Close</button>
+			<form method="post" action="/businessportal/customServices/BusinessVoIP/performGlobalSearch.do?regKey=UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice Registration" id="globalSearchForm" class="withoutSpinner">
+				<label class="sr-only" for="globalSearchString">Search</label>
+				<div class="input-group">
+					<input type="text" id="globalSearchString" name="globalSearchString" class="form-control" placeholder="Search..." />
+					<span class="input-group-btn">
+						<button class="btn btn-success" type="submit">
+							<i class="icon-search"><span class="sr-only exceptIEM7"> Search</span></i>
+						</button>
+					</span>
+				</div>
+			</form>
+			<div class="search-results-view hidden">
+				<div class="rounded-box">
+					<h4>Search Results</h4>
+				</div>
+			</div>
+		</div>
+		<div class="header-dropdown-buttons">
+
+
+			<button id="service-offering" type="button" class="btn">
+				Service Offerings
+				<i class="icon-book"></i>
+			</button>
+
+
+			<button id="global-search" type="button" class="btn" aria-controls="global-search-dropdown">
+				Search
+				<i class="icon-search"></i>
+			</button>
+
+		</div>
+	</div>
+
+	<script>
+
+		var immediateSubmission = false;
+
+		$(document).ready(function () {
+
+			var oldView = '';
+			var oldViewLevel2 = '';
+
+
+			$("#service-offering").click(function (e) {
+				e.stopPropagation();
+				$("#global-search-dropdown").slideUp("fast");
+				$("#global-search").children("i").removeClass('icon-chevron-up');
+				$("#global-search").children("i").addClass('icon-search');
+
+				$(this).children("i").toggleClass('icon-book');
+				$(this).children("i").toggleClass('icon-chevron-up');
+				$("#service-offering-dropdown").slideToggle("fast");
+
+				if ($(this).children("i").hasClass('icon-chevron-up') && $("#serviceOfferingDropdown").hasClass('emptyDiv')) {
+					var sodurl = "/businessportal/customServices/BusinessVoIP/getserviceofferingdropdown.do";
+					$.ajax({
+						url: sodurl,
+						type: "GET",
+						data: { serviceOfferinglevel: 'User' },
+						success: function (data, textStatus, jqXHR) {
+							$("#serviceOfferingDropdown").removeClass('emptyDiv').html(data);
+						}
+					});
+				}
+
+			});
+
+			$("#global-search").click(function (e) {
+
+				e.stopPropagation();
+				$("#service-offering-dropdown").slideUp("fast");
+				$("#service-offering").children("i").removeClass('icon-chevron-up');
+				$("#service-offering").children("i").addClass('icon-book');
+
+
+
+				$(this).children("i").toggleClass('icon-search');
+				$(this).children("i").toggleClass('icon-chevron-up');
+				$("#global-search-dropdown").slideToggle("fast", function () {
+					$("#globalSearchString").focus();
+				});
+			});
+
+			$(document).on('click', '.selectPackage', function (e) {
+				e.preventDefault();
+				var level = $(this).data("level");
+				$.ajax({
+					url: $(this).prop('href'),
+					type: "GET",
+					data: {},
+					success: function (data, textStatus, jqXHR) {
+						if ("level2" == level) {
+							oldViewLevel2 = $("#service-offering-dropdown").html();
+						}
+						else {
+							oldView = $("#service-offering-dropdown").html();
+						}
+						$("#service-offering-dropdown").hide().html(data).fadeIn();
+
+						$('html, body').animate({
+							scrollTop: 0
+						}, 500);
+					}
+				});
+			});
+
+			$(document).on('click', '#serviceOfferingReturn', function (event) {
+				$("#loading").hide();
+				$("#service-offering-dropdown").hide().html(oldView).fadeIn();
+				event.stopPropagation();
+			});
+
+			$(document).on('click', '.closeDropDown', function (event) {
+				closeDropDowns();
+			});
+
+			$(document).on('click', '#serviceOfferingReturnLevel2', function (event) {
+				$("#loading").hide();
+				$("#service-offering-dropdown").hide().html(oldViewLevel2).fadeIn();
+				event.s
+				0fe8
+				topPropagation();
+			});
+
+			$(document).on('click', '.clickableRow', function (event) {
+				window.document.location = $(this).attr("href");
+			});
+
+			(function ($) {
+				$.fn.normalkeypress = function (onNormal, onSpecial) {
+					this.bind('keydown keypress keyup', (function () {
+						var keyDown = {}, // keep track of which buttons have been pressed
+							lastKeyDown;
+						return function (event) {
+							if (event.type == 'keydown') {
+								keyDown[lastKeyDown = event.keyCode] = false;
+								return;
+							}
+							if (event.type == 'keypress') {
+								keyDown[lastKeyDown] = event; // this keydown also triggered a keypress
+								return;
+							}
+
+							// 'keyup' event
+							var keyPress = keyDown[event.keyCode];
+							if (keyPress &&
+								(((keyPress.which >= 32 // not a control character
+									//|| keyPress.which == 8  || // \b
+									//|| keyPress.which == 9  || // \t
+									//|| keyPress.which == 10 || // \n
+									//|| keyPress.which == 13    // \r
+								) &&
+									!(keyPress.which >= 63232 && keyPress.which <= 63247) && // not special character in WebKit < 525
+									!(keyPress.which == 63273) && //
+									!(keyPress.which >= 63275 && keyPress.which <= 63277) && //
+									!(keyPress.which === event.keyCode && // not End / Home / Insert / Delete (i.e. in Opera < 10.50)
+										(keyPress.which == 35 || // End
+											keyPress.which == 36 || // Home
+											keyPress.which == 45 || // Insert
+											keyPress.which == 46 || // Delete
+											keyPress.which == 144    // Num Lock
+										)
+									)
+								) ||
+									keyPress.which === undefined // normal character in IE < 9.0
+								) &&
+								keyPress.charCode !== 0 // not special character in Konqueror 4.3
+							) {
+
+								// Normal character
+								if (onNormal) onNormal.call(this, keyPress, event);
+							} else {
+								// Special character
+								if (onSpecial) onSpecial.call(this, event);
+							}
+							delete keyDown[event.keyCode];
+						};
+					})());
+				};
+			})(jQuery);
+
+			$("#globalSearchString").normalkeypress(function (e) {
+				var searchString = $.trim($(this).val());
+				if (searchString.length > 2) {
+					typewatch(function () { performGlobalSearch('keyup', window.immediateSubmission); }, 500);
+				} else {
+					$(".search-results-view").addClass('hidden');
+				}
+
+			});
+
+
+			$("#globalSearchForm").submit(function (e) {
+				e.preventDefault();
+				e.stopPropagation();
+				var searchString = $("#globalSearchString").val();
+				if (searchString.length > 2) {
+					window.immediateSubmission = true;
+					typewatch(function () { performGlobalSearch('submit', window.immediateSubmission); }, 0);
+				} else {
+					$(".search-results-view").addClass('hidden');
+				}
+				return false;
+			});
+
+
+
+			$(".header-dropdown-wrapper").bind("clickoutside", function (event) {
+				closeDropDowns();
+			});
+
+			$(".header-dropdown-wrapper").bind("touchstartoutside", function (event) {
+				closeDropDowns();
+			});
+		});
+
+		function closeDropDowns() {
+			$("#global-search-dropdown").slideUp("fast");
+			$("#service-offering-dropdown").slideUp("fast");
+			$("#service-offering").children("i").removeClass('icon-chevron-up');
+			$("#service-offering").children("i").addClass('icon-book');
+			$("#global-search").children("i").removeClass('icon-chevron-up');
+			$("#global-search").children("i").addCl
+			0fe8
+			ass('icon-search');
+		}
+
+		function performGlobalSearch(method, immediateSubmission) {
+			if (immediateSubmission == true && method == 'keyup') {
+				window.immediateSubmission = false;
+				return false;
+			}
+			var gsRegKey = $("#gsRegKey").val();
+			var globalSearchUrl = "/businessportal/customServices/BusinessVoIP/performGlobalSearch.do?regKey=" + gsRegKey;
+
+			$.ajax({
+				url: globalSearchUrl,
+				type: "POST",
+				data: { token: $("#globalSearchString").val() },
+				dataType: "json",
+				success: function (data, textStatus, jqXHR) {
+					//console.log(data);
+					var sitesTable = "";
+					var usersTable = "";
+					var br = "";
+
+					if ($(data.sitesFound).size() != 0) {
+						sitesTable = "<h4>Sites</h4>" +
+							"<div class='table-responsive'><table class='table table-hover secondary'>" +
+							"<tr>" +
+							"<th>" +
+							"Site Name" +
+							"</th>" +
+							"<th>" +
+							"</th>" +
+							/*"<th>" +
+								"Org ID" +
+							"</th>" +*/
+							"</tr>";
+						$(data.sitesFound).each(function (i, item) {
+							sitesTable += "<tr>" +
+								"<td>";
+							if (item.url != null) {
+								sitesTable += "<a href='" + item.url + "'>" +
+									item.siteName +
+									"</a>";
+							} else {
+								sitesTable += item.siteName;
+							}
+
+							sitesTable += "</td>" +
+
+								"<td>";
+							if (item.url != null) {
+								sitesTable += "<a href='" + item.url + "' class='btn btn-warning btn-sm pull-right'>" +
+									"<i class='icon-screenshot'></i> Select" +
+									"</a>";
+							}
+							sitesTable += "</td>" +
+								/*"<td>" +
+									item.orgId +
+								"</td>" +*/
+								"</tr>";
+						});
+						sitesTable += "</table></div>";
+					}
+					if ($(data.sitesFound).size() != 0 && $(data.usersFound).size() != 0) {
+						br = "<br/>"
+					}
+
+					if ($(data.usersFound).size() != 0) {
+						usersTable = "<h4>Users</h4>" +
+							"<div class='table-responsive-large'><table class='table table-hover secondary'>" +
+							"<tr>" +
+							"<th>" +
+							"Username" +
+							"</th>" +
+							"<th>" +
+							"First Name" +
+							"</th>" +
+							"<th>" +
+							"Surname" +
+							"</th>" +
+							"<th>" +
+							"Phone Number" +
+							"</th>" +
+							"<th>" +
+							"Site Name" +
+							"</th>" +
+							"<th>" +
+							"</th>" +
+							/*"<th>" +
+								"Org ID" +
+							"</th>" +*/
+							"</tr>";
+
+						$(data.usersFound).each(function (i, item) {
+							usersTable += "<tr>" +
+								"<td>";
+							if (item.url != null) {
+								usersTable += "<a href='" + item.url + "'>" +
+									item.userName +
+									"</a>";
+							} else {
+								usersTable += item.userName;
+							}
+
+							usersTable += "</td>" +
+								"<td>" +
+								item.firstName +
+								"</td>" +
+								"<td>" +
+								item.lastName +
+								"</td>" +
+								"<td>" +
+								item.phoneNumber +
+								"</td>" +
+								"<td>" +
+								item.siteName +
+								"</td>" +
+								"<td>";
+							if (item.url != null) {
+								usersTable += "<a href='" + item.url + "' class='btn btn-warning btn-sm pull-right'>" +
+									"<i class='icon-screenshot'></i> Select" +
+									"</a>";
+							}
+
+							usersTable += "</td>" +
+								"</tr>";
+
+						});
+						usersTable += "</table></div>";
+					}
+
+					if ($(data.usersFound).size() == 0 && $(data.sitesFound).size() == 0) {
+						$(".search-results-view .rounded-box").html('<span class="error">No Results Found</span>');
+					} else {
+						$(".search-results-view .rounded-box").html(usersTable + br + sitesTable);
+					}
+
+
+					$(".search-results-view").removeClass('hidden');
+				},
+				complete: function (jqXHR, textStatus) {
+					window.immediateSubmission = false;
+				}
+			});
+		}
+
+		var typewatch = function () {
+			var timer = 0;
+			return function (callback, ms) {
+				clearTimeout(timer);
+				timer = setTimeout(callback, ms);
+
+				0fe8
+			}
+		}();
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="announcement-banner">
+
+	</div>
+
+	<ul class="nav nav-tabs top-tab" role="navigation">
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- User menu -->
+		<!-- Dashboard -->
+
+
+
+
+
+
+
+
+
+
+		<li class="">
+			<a href="/businessportal/customServices/BusinessVoIP/getuserdashboard.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-bar-chart"></i><span class="sr-only"> Dashboard</span><span class="sr-only"> </span></a>
+		</li>
+
+		<!-- Features -->
+
+
+
+
+
+
+
+
+
+		<li class="active">
+			<a href="/businessportal/customServices/BusinessVoIP/getuserfeatures.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-rocket"></i> Features<span class="sr-only"> Link Active</span></a>
+		</li>
+
+		<!-- Devices -->
+
+
+
+
+
+
+
+
+
+		<li class="">
+			<a href="/businessportal/customServices/BusinessVoIP/getuserdevicemanagement.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;userName=Phone&amp;SCAmappingFor=devices"><i class="icon-tablet"></i> Devices<span class="sr-only"> </span></a>
+		</li>
+
+		<!-- Applications -->
+
+
+
+
+
+
+
+
+
+		<li class="">
+			<a href="/businessportal/customServices/BusinessVoIP/getuserapplications.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-th-large"></i> Applications<span class="sr-only"> </span></a>
+		</li>
+
+		<!-- Profile -->
+
+
+
+
+
+
+
+
+		<li class="">
+			<a href="/businessportal/sectionMyAccount.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-edit"></i> My Account<span class="sr-only"> </span></a>
+		</li>
+
+
+	</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="page-wrapper">
+		<div class="row-offcanvas row-offcanvas-left">
+
+			<div class="sidebar sidebar-offcanvas">
+				<!-- COMPANIES -->
+				<!-- link to companies list -->
+
+
+			</div>
+
+			<div class="page">
+
+				<div class="row">
+					<div class="col-sm-6  col-sm-push-6">
+
+						<div class="object-select">
+							<!-- company name -->
+							<!-- customer selected -->
+							Company: <strong>BAB</strong><br />
+
+
+							<!--  site name -->
+							<!-- employee name -->
+							<!-- customer selected but not employee -->
+							<!-- group name -->
+
+
+
+
+
+
+
+						</div>
+
+					</div>
+					<div class="col-sm-6 col-sm-pull-6 titleWrapper">
+
+						<h1 id="pageTitle" class="pageTitle">
+							Features
+
+
+
+
+							&rsaquo;
+							Call Forwarding Selective
+
+
+
+
+
+						</h1>
+
+					</div>
+
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div id="messageBox">
+
+
+					<div class="alert alert-success alert-dismissable">
+						<strong><i class="icon-ok"></i> Success:</strong> Feature updated
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+							&times;<label class="sr-only"> Close</label>
+						</button>
+					</div>
+
+				</div>
+
+				<div class="well">
+
+					<ol class="breadcrumb">
+
+
+
+
+
+						<li><a class="action" href="/businessportal/customServices/BusinessVoIP/getuserfeatures.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration">Employee Features</a></li>
+
+
+
+
+
+
+						<li class="active">Call Forwarding Selective</li>
+
+
+
+
+					</ol>
+
+					<div class="rounded-box">
+
+						<div class="row">
+							<div class="col-sm-8">
+								<h4 class="subtitle">Call Forwarding Selective</h4>
+							</div>
+
+
+							<div class="col-sm-4">
+
+								<button class="btn btn-warning pull-right" id="startPageTour"><i class="icon-question"></i> Assistance</button>
+								<div class="clearfix"></div>
+								<br class="visible-xs" />
+
+							</div>
+
+
+						</div>
+
+						<!--[if lt IE 9]>
+						<style>
+							#startPageTour{display:none;}
+						</style>
+						<![endif]-->
+
+						<form name="CallForwardingSelectiveListForm" method="post" action="/businessportal/customServices/BusinessVoIP/setcallforwardingselectivelist.do" class="form-horizontal" id="cfsListForm">
+							<input type="hidden" name="forwardToNumberSetOnce" value="true">
+							<input type="hidden" id="regKey" name="regKey" value="UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice Registration">
+							<input type="hidden" name="forwardToNumberOriginal" value="010101010101" id="forwardToNumberOriginal">
+
+
+
+
+
+
+							<input type="hidden" name="description[0]" value="AA1 Monday Morning - Office">
+							<input type="hidden" name="timeScheduleName[0]" value="A Monday 10:00 - 14:00">
+							<input type="hidden" name="timeScheduleType[0]" value="Personal">
+
+							<input type="hidden" name="description[1]" value="AB1 Monday Afternoon - Office A">
+							<input type="hidden" name="timeScheduleName[1]" value="B Monday 14:00 - 18:00">
+							<input type="hidden" name="timeScheduleType[1]" value="Personal">
+
+							<input type="hidden" name="description[2]" value="AC1 Monday Evening - Office W">
+							<input type="hidden" name="timeScheduleName[2]" value="C Monday 18:00 - 22:00">
+							<input type="hidden" name="timeScheduleType[2]" value="Personal">
+
+							<input type="hidden" name="description[3]" value="AD1 Monday Night - V H">
+							<input type="hidden" name="timeScheduleName[3]" value="D Monday 22:00 - Tuesday 08:00">
+							<input type="hidden" name="timeScheduleType[3]" value="Personal">
+
+							<input type="hidden" name="description[4]" value="IA Tuesday Morning - PW">
+							<input type="hidden" name="timeScheduleName[4]" value="A Tuesday 08:00 - 13:00">
+							<input type="hidden" name="timeScheduleType[4]" value="Personal">
+
+							<input type="hidden" name="description[5]" value="IB Tuesday Afternoon - PC">
+							<input type="hidden" name="timeScheduleName[5]" value="B Tuesday 13:00 - 18:00">
+							<input type="hidden" name="timeScheduleType[5]" value="Personal">
+
+							<input type="hidden" name="description[6]" value="IC Tuesday Evening - Office">
+							<input type="hidden" name="timeScheduleName[6]" value="C Tuesday 18:00 - 22:00">
+							<input type="hidden" name="timeScheduleType[6]" value="Personal">
+
+							<input type="hidden" name="description[7]" value="ID Tuesday Night - K R">
+							<input type="hidden" name="timeScheduleName[7]" value="D Tuesday 22:00 - Wednesday 08:00">
+							<input type="hidden" name="timeScheduleType[7]" value="Personal">
+
+							<input type="hidden" name="description[8]" value="JA Wednesday Late F">
+
+							0fe8
+							<input type="hidden" name="timeScheduleName[8]" value="A Wednesday 08:00 - 13:00">
+							<input type="hidden" name="timeScheduleType[8]" value="Personal">
+
+							<input type="hidden" name="description[9]" value="JB Wednesday Afternoon - BA">
+							<input type="hidden" name="timeScheduleName[9]" value="B Wednesday 13:00 - 18:00">
+							<input type="hidden" name="timeScheduleType[9]" value="Personal">
+
+							<input type="hidden" name="description[10]" value="JC Wednesday Evening - Office">
+							<input type="hidden" name="timeScheduleName[10]" value="C Wednesday 18:00 - 22:00">
+							<input type="hidden" name="timeScheduleType[10]" value="Personal">
+
+							<input type="hidden" name="description[11]" value="JD Wednesday Night - MG">
+							<input type="hidden" name="timeScheduleName[11]" value="D Wednesday 22:00 - Thursday 08:00">
+							<input type="hidden" name="timeScheduleType[11]" value="Personal">
+
+							<input type="hidden" name="description[12]" value="KA Thursday Morning DH">
+							<input type="hidden" name="timeScheduleName[12]" value="A Thursday 08:00 - 13:00">
+							<input type="hidden" name="timeScheduleType[12]" value="Personal">
+
+							<input type="hidden" name="description[13]" value="KA1 Thursday Morning MF">
+							<input type="hidden" name="timeScheduleName[13]" value="A Thursday 08:00 - 13:00">
+							<input type="hidden" name="timeScheduleType[13]" value="Personal">
+
+							<input type="hidden" name="description[14]" value="KB Thursday Afternoon - LJ">
+							<input type="hidden" name="timeScheduleName[14]" value="B Thursday 13:00 - 18:00">
+							<input type="hidden" name="timeScheduleType[14]" value="Personal">
+
+							<input type="hidden" name="description[15]" value="KC Thursday Evening - LO">
+							<input type="hidden" name="timeScheduleName[15]" value="C Thursday 18:00 - 22:00">
+							<input type="hidden" name="timeScheduleType[15]" value="Personal">
+
+							<input type="hidden" name="description[16]" value="KD Thursday Night - DP">
+							<input type="hidden" name="timeScheduleName[16]" value="D Thursday 22:00 - Friday 10:00">
+							<input type="hidden" name="timeScheduleType[16]" value="Personal">
+
+							<input type="hidden" name="description[17]" value="LA Friday Morning - GB">
+							<input type="hidden" name="timeScheduleName[17]" value="A Friday 10:00 - 14:00">
+							<input type="hidden" name="timeScheduleType[17]" value="Personal">
+
+							<input type="hidden" name="description[18]" value="LB Friday Afternoon - Office C">
+							<input type="hidden" name="timeScheduleName[18]" value="B Friday 14:00 - 18:00">
+							<input type="hidden" name="timeScheduleType[18]" value="Personal">
+
+							<input type="hidden" name="description[19]" value="LC Friday Evening - F EF">
+							<input type="hidden" name="timeScheduleName[19]" value="C Friday 18:00 - 22:00">
+							<input type="hidden" name="timeScheduleType[19]" value="Personal">
+
+							<input type="hidden" name="description[20]" value="LD Friday Night - KC">
+							<input type="hidden" name="timeScheduleName[20]" value="D Friday 22:00 - Saturday 10:00">
+							<input type="hidden" name="timeScheduleType[20]" value="Personal">
+
+							<input type="hidden" name="description[21]" value="MA Saturday Morning - LO">
+							<input type="hidden" name="timeScheduleName[21]" value="A Saturday 10:00 - 14:00">
+							<input type="hidden" name="timeScheduleType[21]" value="Personal">
+
+							<input type="hidden" name="description[22]" value="MB Saturday Afternoon - GB">
+							<input type="hidden" name="timeScheduleName[22]" value="B Saturday 14:00 - 18:00">
+							<input type="hidden" name="timeScheduleType[22]" value="Personal">
+
+							<input type="hidden" name="description[23]" value="MC Saturday Evening - Offi
+0fe8
+ce">
+							<input type="hidden" name="timeScheduleName[23]" value="C Saturday 18:00 - 22:00">
+							<input type="hidden" name="timeScheduleType[23]" value="Personal">
+
+							<input type="hidden" name="description[24]" value="MD Saturday Night - KZ">
+							<input type="hidden" name="timeScheduleName[24]" value="D Saturday 22:00 - Sunday 10:00">
+							<input type="hidden" name="timeScheduleType[24]" value="Personal">
+
+							<input type="hidden" name="description[25]" value="NA Sunday Morning - Office FC">
+							<input type="hidden" name="timeScheduleName[25]" value="A Sunday 10:00 - 14:00">
+							<input type="hidden" name="timeScheduleType[25]" value="Personal">
+
+							<input type="hidden" name="description[26]" value="NB Sunday Afternoon - Office FG">
+							<input type="hidden" name="timeScheduleName[26]" value="B Sunday 14:00 - 18:00">
+							<input type="hidden" name="timeScheduleType[26]" value="Personal">
+
+							<input type="hidden" name="description[27]" value="NC Sunday Evening - Office FG">
+							<input type="hidden" name="timeScheduleName[27]" value="C Sunday 18:00 - 22:00">
+							<input type="hidden" name="timeScheduleType[27]" value="Personal">
+
+							<input type="hidden" name="description[28]" value="ND Sunday Night - FE">
+							<input type="hidden" name="timeScheduleName[28]" value="D Sunday 22:00 Monday 10:00">
+							<input type="hidden" name="timeScheduleType[28]" value="Personal">
+
+							<input type="hidden" name="description[29]" value="ZZ Test UI">
+							<input type="hidden" name="timeScheduleName[29]" value="D Friday 22:00 - Saturday 10:00">
+							<input type="hidden" name="timeScheduleType[29]" value="Personal">
+
+
+
+
+							<div class="row">
+								<div class="col-lg-10 col-md-9 col-sm-8">
+
+									<div class="form-group">
+										<div class="col-lg-8 col-md-9 col-lg-push-4 col-md-push-3">
+											<label for="enabled" class="control-label" id="enableCFS">
+												<input type="checkbox" name="isActive" value="on" checked="checked" class="checkbox" id="enabled">
+												Turn On Call Forwarding Selective
+											</label>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="forwardToNumber" class="col-lg-4 col-md-3 control-label">
+											<i class="icon-asterisk required" title="required"></i>
+											Default Forward To Number/SIP URI
+										</label>
+										<div class="col-lg-8 col-md-9">
+											<input type="text" class="form-control number required" id="forwardToNumber" name="forwardToNumber" value="010101010101" maxlength="20" placeholder="Telephone Number / SIP URI" />
+
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-lg-8 col-md-9 col-lg-push-4 col-md-push-3">
+											<label for="useRingSplashEenabled" class="control-label" id="reminderCFS">
+												<input type="checkbox" name="useRingSplash" value="on" checked="checked" class="checkbox" id="useRingSplashEenabled">
+												Play A Short Ring When A Call Is Forwarded
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<br />
+
+							<div class="row">
+								<div class="col-lg-10 col-md-9 col-sm-8">
+									<h5 class="subtitle">Rules</h5>
+								</div>
+								<div class="col-lg-2 col-md-3 col-sm-4">
+									<button value="New" name="newButton" type="button" class="btn btn-block btn-success" id="newButton" onclick="javascript:$('#SubmitButton').val('New');"><i class="icon-plus"></i> Add</button>
+								</div>
+							</div>
+
+							<span class="p
+0fe8
+agebanner withFooTable"></span>
+							<ul class="pagination paged hide-if-no-paging pull-right"></ul>
+							<div class='table-responsive overthrow'>
+								<table id="rules" class="table secondary table-hover">
+									<thead>
+										<tr class="header">
+											<th>
+
+												<input type="checkbox" class="checkbox" id="selectAll" title="Check All For Deletion" />
+
+											</th>
+											<th scope="col" style="width:120px; min-width:120px; max-width:120px;" id="statusCol">
+												Status
+											</th>
+											<th scope="col" id="editCol">
+												Description
+											</th>
+											<th scope="col">
+												Time Schedule
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+
+
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[0]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[0]" value="on" class="checkbox all" id="deleteRule[0]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_0" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[0]" value="on" checked="checked" class="switch" id="enabled_0">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=AA1+Monday+Morning+-+Office" class="editRuleLink">
+													AA1 Monday Morning - Office
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												A Monday 10:00 - 14:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[1]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[1]" value="on" class="checkbox all" id="deleteRule[1]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_1" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[1]" value="on" checked="checked" class="switch" id="enabled_1">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=AB1+Monday+Afternoon+-+Office+%28W%29" class="editRuleLink">
+													AB1 Monday Afternoon - Office A
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												B Monday 14:00 - 18:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+
+												0fe8
+												<label class="sr-only" for="deleteRule[2]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[2]" value="on" class="checkbox all" id="deleteRule[2]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_2" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[2]" value="on" checked="checked" class="switch" id="enabled_2">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=AC1+Monday+Evening+-+Office+%28Q%29" class="editRuleLink">
+													AC1 Monday Evening - Office W
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												C Monday 18:00 - 22:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[3]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[3]" value="on" class="checkbox all" id="deleteRule[3]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_3" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[3]" value="on" checked="checked" class="switch" id="enabled_3">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=AD1+Monday+Night+-+R" class="editRuleLink">
+													AD1 Monday Night - V H
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												D Monday 22:00 - Tuesday 08:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[4]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[4]" value="on" class="checkbox all" id="deleteRule[4]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_4" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[4]" value="on" checked="checked" class="switch" id="enabled_4">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3D
+0fe8
+BTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=IA+Tuesday+Morning+-+Pete+W" class="editRuleLink">
+													IA Tuesday Morning - PW
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												A Tuesday 08:00 - 13:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[5]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[5]" value="on" class="checkbox all" id="deleteRule[5]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_5" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[5]" value="on" checked="checked" class="switch" id="enabled_5">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=IB+Tuesday+Afternoon+-R" class="editRuleLink">
+													IB Tuesday Afternoon - PC
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												B Tuesday 13:00 - 18:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[6]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[6]" value="on" class="checkbox all" id="deleteRule[6]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_6" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[6]" value="on" checked="checked" class="switch" id="enabled_6">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=IC+Tuesday+Evening+-+Office" class="editRuleLink">
+													IC Tuesday Evening - Office
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												C Tuesday 18:00 - 22:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[7]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[7]" value="on" class="checkbox all" id="deleteRule[7]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_7" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[7]" value="on" checked="checked" class="switch" id="enabled_7">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=ID+Tuesday+Night+-RT" class="editRuleLink">
+													ID Tuesday Night - K R
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												D Tuesday 22:00 - Wednesday 08:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[8]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[8]" value="on" class="checkbox all" id="deleteRule[8]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_8" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[8]" value="on" checked="checked" class="switch" id="enabled_8">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=JA+Wednesday+Morning+-+ER" class="editRuleLink">
+													JA Wednesday Late F
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												A Wednesday 08:00 - 13:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[9]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[9]" value="on" class="checkbox all" id="deleteRule[9]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_9" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[9]" value="on" checked="checked" class="switch" id="enabled_9">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;
+0fe8
+description=JB+Wednesday+Afternoon+-+Mark+B" class="editRuleLink">
+													JB Wednesday Afternoon - BA
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												B Wednesday 13:00 - 18:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[10]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[10]" value="on" class="checkbox all" id="deleteRule[10]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_10" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[10]" value="on" checked="checked" class="switch" id="enabled_10">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=JC+Wednesday+Evening+-+Office" class="editRuleLink">
+													JC Wednesday Evening - Office
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												C Wednesday 18:00 - 22:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[11]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[11]" value="on" class="checkbox all" id="deleteRule[11]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_11" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[11]" value="on" checked="checked" class="switch" id="enabled_11">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=JD+Wednesday+Night+-+TYU" class="editRuleLink">
+													JD Wednesday Night - MG
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												D Wednesday 22:00 - Thursday 08:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[12]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[12]" value="on" class="checkbox all" id="deleteRule[12]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_12" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[12]" value="on" checked="checked" class="switch" id="enabled_12">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=KA+Thursday+Morning+ER" class="editRuleLink">
+													KA Thursday Morning DH
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												A Thursday 08:00 - 13:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[13]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[13]" value="on" class="checkbox all" id="deleteRule[13]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_13" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[13]" value="on" class="switch" id="enabled_13">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=KA1+Thursday+Morning+RTY" class="editRuleLink">
+													KA1 Thursday Morning MF
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												A Thursday 08:00 - 13:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[14]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[14]" value="on" class="checkbox all" id="deleteRule[14]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_14" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[14]" value="on" checked="checked" class="switch" id="enabled_14">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=KB+Thursday+Afternoon+-+TYU" class="editRuleLink">
+													KB Thursday Afternoon - LJ
+													<i class="icon-
+0fe8
+pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												B Thursday 13:00 - 18:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[15]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[15]" value="on" class="checkbox all" id="deleteRule[15]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_15" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[15]" value="on" checked="checked" class="switch" id="enabled_15">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=KC+Thursday+Evening+-+Office+%28KLR%29" class="editRuleLink">
+													KC Thursday Evening - LO
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												C Thursday 18:00 - 22:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[16]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[16]" value="on" class="checkbox all" id="deleteRule[16]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_16" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[16]" value="on" checked="checked" class="switch" id="enabled_16">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=KD+Thursday+Night+-+QLD" class="editRuleLink">
+													KD Thursday Night - DP
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												D Thursday 22:00 - Friday 10:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[17]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[17]" value="on" class="checkbox all" id="deleteRule[17]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_17" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" da
+													 0fe8
+													 ta-off="default">
+													<input type="checkbox" name="status[17]" value="on" checked="checked" class="switch" id="enabled_17">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=LA+Friday+Morning+-+%28E%29" class="editRuleLink">
+													LA Friday Morning - GB
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												A Friday 10:00 - 14:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[18]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[18]" value="on" class="checkbox all" id="deleteRule[18]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_18" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[18]" value="on" checked="checked" class="switch" id="enabled_18">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=LB+Friday+Afternoon+-+Office+%28BL%29" class="editRuleLink">
+													LB Friday Afternoon - Office C
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												B Friday 14:00 - 18:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[19]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[19]" value="on" class="checkbox all" id="deleteRule[19]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_19" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[19]" value="on" checked="checked" class="switch" id="enabled_19">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=LC+Friday+Evening+-+Office+%28ER+H%29" class="editRuleLink">
+													LC Friday Evening - F EF
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+												0fe8
+
+
+
+												C Friday 18:00 - 22:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[20]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[20]" value="on" class="checkbox all" id="deleteRule[20]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_20" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[20]" value="on" checked="checked" class="switch" id="enabled_20">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=LD+Friday+Night+-+D" class="editRuleLink">
+													LD Friday Night - KC
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												D Friday 22:00 - Saturday 10:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[21]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[21]" value="on" class="checkbox all" id="deleteRule[21]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_21" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[21]" value="on" checked="checked" class="switch" id="enabled_21">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=MA+Saturday+Morning+-+Office+%28KLR%29" class="editRuleLink">
+													MA Saturday Morning - LO
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												A Saturday 10:00 - 14:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[22]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[22]" value="on" class="checkbox all" id="deleteRule[22]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_22" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[22]" value="on" checked="checked" class="switch" id="enabled_22">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=MB+Saturday+Afternoon+-+Office+%28W+F%29" class="editRuleLink">
+													MB Saturday Afternoon - GB
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												B Saturday 14:00 - 18:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[23]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[23]" value="on" class="checkbox all" id="deleteRule[23]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_23" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[23]" value="on" checked="checked" class="switch" id="enabled_23">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=MC+Saturday+Evening+-+Office" class="editRuleLink">
+													MC Saturday Evening - Office
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												C Saturday 18:00 - 22:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[24]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[24]" value="on" class="checkbox all" id="deleteRule[24]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_24" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[24]" value="on" checked="checked" class="switch" id="enabled_24">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=MD+Saturday+Night+-+Q" class="editRuleLink">
+													MD Saturday Night - KZ
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												D Saturday 22:00 - Sunday 10:00
+
+
+												0fe8
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[25]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[25]" value="on" class="checkbox all" id="deleteRule[25]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_25" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[25]" value="on" checked="checked" class="switch" id="enabled_25">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=NA+Sunday+Morning+-+Office+%28EE%29" class="editRuleLink">
+													NA Sunday Morning - Office FC
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												A Sunday 10:00 - 14:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[26]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[26]" value="on" class="checkbox all" id="deleteRule[26]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_26" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[26]" value="on" checked="checked" class="switch" id="enabled_26">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=NB+Sunday+Afternoon+-+Office+%28PD%29" class="editRuleLink">
+													NB Sunday Afternoon - Office FG
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												B Sunday 14:00 - 18:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[27]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[27]" value="on" class="checkbox all" id="deleteRule[27]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_27" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[27]" value="on" checked="checked" class="switch" id="enabled_27">
+													0fe8
+
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=NC+Sunday+Evening+-+Office+%28D+C%29" class="editRuleLink">
+													NC Sunday Evening - Office FG
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												C Sunday 18:00 - 22:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[28]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[28]" value="on" class="checkbox all" id="deleteRule[28]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_28" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[28]" value="on" checked="checked" class="switch" id="enabled_28">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=ND+Sunday+Night+-+FE" class="editRuleLink">
+													ND Sunday Night - FE
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												D Sunday 22:00 Monday 10:00
+
+
+
+
+												(Employee)
+
+
+
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<label class="sr-only" for="deleteRule[29]">Check For Deletion</label>
+												<input type="checkbox" name="deleteRule[29]" value="on" class="checkbox all" id="deleteRule[29]">
+											</td>
+
+											<td style="width:120px; min-width:120px; max-width:120px;">
+												<label for="enabled_29" class="sr-only">Status</label>
+												<div tabindex="0" class="make-switch" data-on="success" data-off="default">
+													<input type="checkbox" name="status[29]" value="on" checked="checked" class="switch" id="enabled_29">
+												</div>
+											</td>
+
+											<td>
+
+												<a data-is-ajax="true" href="getcallforwardingselectiverule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;operation=modify&amp;description=ZZ+Test+UI" class="editRuleLink">
+													ZZ Test UI
+													<i class="icon-pencil"></i>
+												</a>
+											</td>
+
+											<td>
+
+
+
+												D Friday 22:00 - Saturday 10:00
+
+
+
+
+												(Employee)
+
+
+
+
+												0fe8
+											</td>
+										</tr>
+
+
+
+
+
+									</tbody>
+								</table>
+
+
+							</div>
+
+							<br />
+
+							<button type="button" class="btn btn-danger" name="removeButton" id="deleteButton" disabled="disabled"><i class="icon-remove"></i> Delete</button>
+							<br />
+
+
+							<br />
+
+							<input type="hidden" id="SubmitButton" name="SubmitButton" value="Ok">
+
+							<div class="row" id="saveButtonRow">
+								<div class="col-lg-9 col-md-8 col-lg-push-3 col-md-push-4">
+									<button type="submit" class="btn btn-lg btn-block btn-success" id="saveApplyButton" onclick="$('#SubmitButton').val('Ok');">
+										<i class="icon-ok"></i>
+										Save
+									</button>
+								</div>
+								<br class="hidden-md hidden-lg">
+								<div class="col-lg-3 col-md-4 col-lg-pull-9 col-md-pull-8">
+									<button type="submit" class="btn btn-lg btn-block btn-warning" onclick="$('#SubmitButton').val('Cancel');" data-dismiss="modal">
+										<i class="icon-ban-circle"></i>
+										Cancel
+									</button>
+								</div>
+
+							</div>
+
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+		$(document).ready(function () {
+
+			$('#rules').footable({
+				pageSize: 20,
+				pageNavigation: '.paged',
+				paginationInfo: '.pagebanner',
+				singularObject: 'Rule',
+				pluralObject: 'Rules',
+				templateWithPagination: '#0 #1 found. Displaying #2 to #3',
+				templateWithoutPagination: '#0 #1 found. Displaying all #2'
+			});
+
+			$("#deleteButton").click(function (e) {
+				$('#SubmitButton').val('Delete');
+				if (numChecked > 0) {
+					$("#submitButton").val('Delete');
+					if (confirm("Deleting a Rule will permanently remove it from the system. Are you sure you want to continue?")) {
+						$(this).closest('form').submit();
+					} else {
+						e.preventDefault();
+						return false;
+					}
+				} else {
+					alert("Please first select the Rule you wish to delete.");
+				}
+				e.preventDefault();
+				return false;
+			});
+
+
+
+			var numChecked = 0;
+
+
+			$(document).on('ifChecked', '.all', function (event) {
+				numChecked++;
+				$("#deleteButton").prop('disabled', false);
+			});
+
+
+			$(document).on('ifUnchecked', '.all', function (event) {
+				numChecked = numChecked - 1;
+				if (numChecked == 0) {
+					$("#deleteButton").prop('disabled', true);
+				}
+			});
+
+			$('#selectAll').on('ifChecked', function (event) {
+				$(".all:visible").iCheck('check');
+			});
+
+			$('#selectAll').on('ifUnchecked', function (event) {
+				$(".all:visible").iCheck('uncheck');
+			});
+
+			$("#newButton").click(function (e) {
+				e.preventDefault();
+				if (($("#forwardToNumber").val() != $("#forwardToNumberOriginal").val())
+					|| $("#forwardToNumber").val() == "") {
+					$(".form-group .error").remove();
+					$("#forwardToNumber").after('<span class="error">Please first save your default forward to number.</span>');
+				} else {
+
+
+					var data = $("#cfsListForm").serializeArray();
+
+					$.ajax({
+						url: "setcallforwardingselectivelist.do", //$("#cfsListForm").attr('action'),
+						type: "POST",
+						data: data,
+						success: function (data, textStatus, jqXHR) {
+							$("#cfsModal").find(".modal-content").html(data);
+
+							$(".checkboxnew").iCheck({
+								checkboxClass: 'icheckbox_flat-green',
+								radioClass: 'iradio_flat-green'
+							});
+
+							$("#cfsModal").modal('show');
+						}
+					});
+				}
+			});
+
+			$(".editRuleLink").click(function (e) {
+				e.preventDefault();
+				$.ajax({
+					url: $(this).prop('href'),
+					type: "POST",
+					data: {
+					},
+					success: function (data, textStatus, jqXHR) {
+						$("#cfsModal").find(".modal-content").html(data);
+						$("#cfsModal").modal('show');
+
+					}
+				});
+			});
+
+			$(document).on('click', "#saveButton", function (e) {
+				e.preventDefault();
+				$("#cfsModal span.error").remove();
+				if ($('#descripti
+0fe8
+on').valid()) {
+					var data = $("#setCfsRuleForm").serializeArray();
+				$.ajax({
+					url: $("#setCfsRuleForm").attr('action'),
+					type: "POST",
+					data: data,
+					success: function (data, textStatus, jqXHR) {
+						var regKey = $("#regKey").val();
+						returnUrl = 'getcallforwardingselectivelist.do?regKey=' + regKey;
+						location.href = returnUrl;
+						//location.reload();
+					},
+					error: function (xhr, errorType, exception) { //Triggered if an error communicating with server
+
+						if (xhr.status === 400) {
+							$("#cfsModal").find(".modal-content").html(xhr.responseText);
+							$("#cfsModal").modal('show');
+
+
+						}
+					}
+				});
+			}
+
+			});
+
+		$(document).on('click', "#applyContinue", function (e) {
+			e.preventDefault();
+			$("#cfsModal span.error").remove();
+
+			if ($('#description').valid()) {
+				var data = $("#setCfsRuleForm").serializeArray();
+				$.ajax({
+					url: $("#setCfsRuleForm").attr('action'),
+					type: "POST",
+					data: data,
+					success: function (data, textStatus, jqXHR) {
+						$("#cfsModal").find(".modal-content").html(jqXHR.responseText);
+						$("#cfsModal").modal('show');
+
+						$(".checkboxnew").iCheck({
+							checkboxClass: 'icheckbox_flat-green',
+							radioClass: 'iradio_flat-green'
+						});
+
+						$(document).on('hide.bs.modal', "#cfsModal", function (e) {
+							location.reload();
+						});
+
+					},
+					error: function (xhr, errorType, exception) { //Triggered if an error communicating with server
+
+						if (xhr.status === 400) {
+							$("#cfsModal").find(".modal-content").html(xhr.responseText);
+							$("#cfsModal").modal('show');
+						}
+					}
+				});
+
+			}
+
+		});
+
+		$(document).on('click', "#addNewNumber", function (e) {
+			e.preventDefault();
+			$("#cfsModal span.error").remove();
+			if ($('#description').valid()) {
+				var data = $("#setCfsRuleForm").serializeArray();
+				$.ajax({
+					url: $("#setCfsRuleForm").attr('action'),
+					type: "POST",
+					data: data,
+					success: function (data, textStatus, jqXHR) {
+						$("#cfsModal").find(".modal-content").html(jqXHR.responseText);
+						$("#cfsModal").modal('show');
+
+						$(".checkboxnew").iCheck({
+							checkboxClass: 'icheckbox_flat-green',
+							radioClass: 'iradio_flat-green'
+						});
+					},
+					error: function (xhr, errorType, exception) { //Triggered if an error communicating with server
+						if (xhr.status === 400) {
+							$("#cfsModal").find(".modal-content").html(xhr.responseText);
+							$("#cfsModal").modal('show');
+
+							$(".checkboxnew").iCheck({
+								checkboxClass: 'icheckbox_flat-green',
+								radioClass: 'iradio_flat-green'
+							});
+						}
+					}
+				});
+			}
+		});
+
+		$(document).on('click', "#deleteNumberButton", function (e) {
+			$('#setCfsRuleForm #SubmitButton').val('Delete');
+			e.preventDefault();
+			$("#cfsModal span.error").remove();
+			if ($('#description').valid()) {
+				var data = $("#setCfsRuleForm").serializeArray();
+				$.ajax({
+					url: $("#setCfsRuleForm").attr('action'),
+					type: "POST",
+					data: data,
+					success: function (data, textStatus, jqXHR) {
+						$("#cfsModal").find(".modal-content").html(jqXHR.responseText);
+						$("#cfsModal").modal('show');
+
+						$(".checkboxnew").iCheck({
+							checkboxClass: 'icheckbox_flat-green',
+							radioClass: 'iradio_flat-green'
+						});
+					},
+					error: function (xhr, errorType, exception) { //Triggered if an error communicating with server
+						if (xhr.status === 400) {
+							$("#cfsModal").find(".modal-content").html(xhr.responseTe
+0fe8
+xt);
+							$("#cfsModal").modal('show');
+
+							$(".checkboxnew").iCheck({
+								checkboxClass: 'icheckbox_flat-green',
+								radioClass: 'iradio_flat-green'
+							});
+						}
+					}
+				});
+			}
+		});
+
+		$(".make-switch").on('switch-change', function (e, r) {
+			$('#SubmitButton').val('Apply');
+
+			var checkbox = $(this);
+			$.ajax({
+				url: $("#cfsListForm").prop('action'),
+				type: "POST",
+				data: $("#cfsListForm").serialize(),
+				success: function (data, textStatus, jqXHR) {
+				},
+				error: function (jqXHR, textStatus, errorThrown) {
+					checkbox.bootstrapSwitch('toggleState', true);
+					var errorMessage = 'Call Forwarding Selective cannot be enabled unless there is at least 1 active criteria.';
+					var errorDiv = '<div class="alert alert-danger alert-dismissable">' +
+						'<strong><i class="icon-warning-sign"></i> Error:</strong>' + errorMessage +
+						'<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;<label class="sr-only"> Close</label></button>' +
+						'</div>';
+					$("#messageBox").html(errorDiv);
+					window.scroll(0, 0);
+				}
+			});
+		});
+
+
+		// Define the tour!
+		var tour = {
+			id: "callForwardingSelectiveTour",
+			showPrevButton: true,
+			i18n: {
+				nextBtn: "Next",
+				prevBtn: "Back"
+			},
+			steps: [
+				{
+					content: "Enable or disable the Call Forwarding Selective service by selecting or deselecting the checkbox. At least one rule must be enabled to turn on this service.",
+					target: "#enableCFS",
+					placement: "bottom"
+				},
+				{
+					content: "Set the default forwarding number or SIP-URI address. You can also enter feature access codes and speed codes in addition to phone numbers or extensions. This field must be set before you can add any rules.",
+					target: "#forwardToNumber",
+					placement: "bottom"
+				},
+				{
+					content: "Set the ring reminder. The service plays a ring reminder when it forwards a call. No ring reminder is played if not checked.",
+					target: "#reminderCFS",
+					placement: "bottom"
+				},
+				{
+					content: "Add a new rule. The Call Forwarding Selective Add page appears. Allows conditions such as Time Schedules and number acceptance rules to be applied.",
+					target: "#newButton",
+					placement: "bottom"
+				},
+				{
+					content: "Enable or disable a rule. Use these switches to toggle the status of any given rule. At least one rule must be enabled if the service is on.",
+					target: "#statusCol",
+					placement: "bottom"
+				},
+				{
+					content: "Edit a rule. To modify a rule, click the description of the rule you wish to edit. The Call Forwarding Selective Modify page appears.",
+					target: "#editCol",
+					placement: "bottom"
+				},
+				{
+					content: "Delete one or more rules. Please first select the ones you wish to delete by using each rules checkbox.",
+					target: "#deleteButton",
+					placement: "bottom"
+				},
+				{
+					content: "Save your changes or cancel without saving.",
+					target: "#saveButtonRow",
+					placement: "top"
+				}
+			]
+		};
+
+		$("#startPageTour").click(function () {
+			hopscotch.startTour(tour);
+		});
+
+
+
+		});
+
+	</script>
+
+	<div class="modal fade" id="cfsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<script>
+		gaPageView('Features - Call Forwarding Selective');
+	</script>
+
+	<div class="footer ">
+
+
+		<p class="footer-text text-right">
+
+
+
+
+
+
+
+		</p>
+	</div>
+
+	<img 0fe8
+		 id="loading" class="loadingGif" alt="Loading" src="/branding/bt/images/loading.gif" />
+
+	<script src="/businessportal/assets/js/jquery/jquery.validate.min.js"></script>
+	<script src="/businessportal/assets/js/jquery/jquery.cookie.js"></script>
+	<script src="/businessportal/assets/js/jquery/jquery.placeholder.js"></script>
+	<script src="/businessportal/assets/js/bootstrap/bootstrap.min.js"></script>
+	<script src="/businessportal/assets/js/bs3-accessibility/bootstrap-accessibility.min.js"></script>
+	<script src="/businessportal/assets/js/bootstrap-switch/bootstrap-switch.min.js"></script>
+	<script src="/businessportal/assets/js/datatables/jquery.dataTables.min.js"></script>
+	<script src="/businessportal/assets/js/footable/footable.min.js"></script>
+	<script src="/businessportal/assets/js/footable/footable.paginate.js"></script>
+	<script src="/businessportal/assets/js/tabdrop/bootstrap-tabdrop.js"></script>
+
+	<script src="/businessportal/assets/js/overthrow/overthrow.js"></script>
+	<script src="/businessportal/assets/js/outside/jquery.ba-outside-events.min.js"></script>
+	<!--[if !IE]><!-->
+	<script src="/businessportal/assets/js/add2home/addtohomescreen.min.js"></script><!--<![endif]-->
+	<script src="/businessportal/assets/js/hopscotch/hopscotch.min.js"></script>
+	<script src="/businessportal/assets/js/select2/select2.full.min.js"></script>
+
+
+
+
+	<script src="/businessportal/assets/js/icheck/jquery.icheck.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('input.radio, input.checkbox').iCheck({
+				checkboxClass: 'icheckbox_flat-green',
+				radioClass: 'iradio_flat-green'
+			});
+		});
+	</script>
+
+
+
+	<script src="/businessportal/assets/js/bp/site.js"></script>
+	<script>
+
+		$(document).ready(function () {
+
+
+			$('[data-toggle=offcanvas]').click(function () {
+
+				$('.row-offcanvas-inner').toggleClass('active');
+			});
+
+			$("form:not(.withoutSpinner)").on("submit", showSpinner);
+
+			$(".make-switch").bootstrapSwitch('setOnLabel', 'On');
+			$(".make-switch").bootstrapSwitch('setOffLabel', 'Off');
+
+			$(".has-switch").on('switch-change', function (e, r) {
+				$(this).attr('aria-checked', r.value.toString());
+			});
+			$(".has-switch").each(function () {
+				$(this).attr('role', 'checkbox');
+				$(this).attr('aria-checked', $(this).bootstrapSwitch('status').toString());
+			});
+
+			if ($(".sidebar a").size() > 0) {
+				var startX = 0;
+				var startY = 0;
+
+				var endX = 0;
+				var endY = 0;
+
+				var buffer = 30;
+
+				window.swiping = false;
+
+
+				$('.row-offcanvas').on("touchstart", function (ev) {
+					var e = ev.originalEvent;
+					startX = e.touches[0].clientX;
+					startY = e.touches[0].clientY;
+
+					var sidebarLeft = $('.sidebar').offset().left + $('.sidebar').width() - buffer;
+
+
+					if ($(this).hasClass('active')) {
+						var sidebarRight = $(window).width();
+					} else {
+						var sidebarRight = buffer;
+					}
+
+					window.swiping = false;
+
+					if (startX >= sidebarLeft && startX <= sidebarRight && !$(e.changedTouches[0].target).hasClass('sidebar-expander') && !$(e.changedTouches[0].target).hasClass('icon-align-justify') && $(window).width() <= 768) {
+						window.swiping = true;
+					} else {
+						window.swiping = false;
+					}
+				});
+
+				$('.row-offcanvas').on("touchmove", function (ev) {
+
+					0e5f
+					var e = ev.originalEvent;
+					endX = e.touches[0].clientX;
+					endY = e.touches[0].clientY;
+
+					if (Math.abs(endX - startX) > Math.abs(endY - startY)) {
+						if (window.swiping && endX <= 80 && endX >= 0) {
+							e.preventDefault();
+							$(this).css({ left: endX });
+							$(this).css('-webkit-transition', 'none');
+							$(this).css('-moz-transition', 'none');
+							$(this).css('transition', 'none');
+						}
+					}
+
+
+
+
+
+				});
+
+				$('.row-offcanvas').on("touchend", function (ev) {
+
+					if (window.swiping) {
+						window.swiping = false;
+
+						if ($(this).hasClass('active')) {
+							var triggerPoint = 50;
+						} else {
+							var triggerPoint = 30;
+						}
+
+						if (endX < triggerPoint) {
+
+							$(this).stop().animate({ left: 0 }, 'fast', null, function () {
+								$(this).css('left', '');
+								$(this).css('-webkit-transition', 'all 0.25s ease-out');
+								$(this).css('-moz-transition', 'all 0.25s ease-out');
+								$(this).css('transition', 'all 0.25s ease-out');
+								$(this).removeClass('active');
+								$('.row-offcanvas-inner').removeClass('active');
+							});
+
+						} else if (endX >= triggerPoint) {
+							$(this).stop().animate({ left: 80 }, 'fast', null, function () {
+								$(this).css('left', '');
+								$(this).css('-webkit-transition', 'all 0.25s ease-out');
+								$(this).css('-moz-transition', 'all 0.25s ease-out');
+								$(this).css('transition', 'all 0.25s ease-out');
+								$(this).addClass('active');
+								$('.row-offcanvas-inner').addClass('active');
+							});
+
+						}
+					}
+
+				});
+
+
+			}
+
+
+		});
+
+		$(document).ajaxError(function (event, jqxhr, settings, exception) {
+			if (jqxhr.status === 401) {
+				alert("Please sign in. (Your session may have expired.)");
+				window.location.replace("/businessportal");
+			} else if (jqxhr.status === 0) {
+				alert("Unable to connect to server. Please check your connection.");
+			}
+		});
+
+		$(document).ajaxStart(function () {
+			showSpinner();
+		}).ajaxStop(function () {
+			$("#loading").hide();
+		});
+
+
+		function showSpinner() {
+			$("#loading").remove();
+			$('body').append('<img id="loading" class="loadingGif" style="display:block;" alt="Loading" src="/branding/bt/images/loading.gif" />');
+		}
+
+	</script>
+	<!--[if !IE]><!-->
+	<script src="/businessportal/assets/js/bp/addtohome.js" type="text/javascript"></script>
+	<!--<![endif]-->
+
+
+	<script src="/businessportal/assets/js/jquery/jquery-migrate-1.2.1.js" type="text/javascript"></script>
+	<script src="/branding/bt/js/cookie.js" type="text/javascript"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+0000

@@ -1,0 +1,2455 @@
+<!DOCTYPE html>
+<!-- saved from url=(0376)https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&schedule=D+Thursday+22%3A00+-+Friday+10%3A00&scheduleType=Personal -->
+<html lang="en" class=" svg webfonts overthrow-enabled"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<script>
+			!function () {
+				function supportsSVG() { return !!document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect }
+				if (supportsSVG()) document.documentElement.className += ' svg'
+			}()
+				
+			if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			  var msViewportStyle = document.createElement("style");
+			  msViewportStyle.appendChild(
+				document.createTextNode(
+				  "@-ms-viewport{width:auto!important}"
+				)
+			  );
+			  document.getElementsByTagName("head")[0].
+				appendChild(msViewportStyle);
+			}
+			
+			(function(document,navigator,standalone) {
+				// prevents links from apps from oppening in mobile safari
+				// this javascript must be the first script in your <head>
+				if ((standalone in navigator) && navigator[standalone]) {
+					var curnode, location=document.location, stop=/^(a|html)$/i;
+					document.addEventListener('click', function(e) {
+						curnode=e.target;
+						if(curnode.getAttribute('data-is-ajax') != "true") {
+							while (!(stop).test(curnode.nodeName)) {
+								curnode=curnode.parentNode;
+							}
+							// Condidions to do this only on links to your own app
+							// if you want all links, use if('href' in curnode) instead.
+							if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+								e.preventDefault();
+								location.href = curnode.href;
+							}
+						}
+						
+					},false);
+				}
+			})(document,window.navigator,'standalone');
+			
+			
+			var isMobile = {
+				Android: function() {
+					return navigator.userAgent.match(/Android/i);
+				},
+				BlackBerry: function() {
+					return navigator.userAgent.match(/BlackBerry/i);
+				},
+				iOS: function() {
+					return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+				},
+				Opera: function() {
+					return navigator.userAgent.match(/Opera Mini/i);
+				},
+				Windows: function() {
+					return navigator.userAgent.match(/IEMobile/i);
+				},
+				any: function() {
+					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+				}
+			};
+			if ( !isMobile.Windows() ) {
+				document.documentElement.className += ' webfonts';
+			} else {
+				document.documentElement.className += ' webfonts';
+			}
+		</script>				
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		
+		
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		
+		
+		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<meta name="msapplication-window" content="width=1024;height=768">
+		
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="shortcut icon" sizes="196x196" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/icon_196.png">
+		<link rel="shortcut icon" sizes="128x128" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/icon_128.png">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon-precomposed" href="https://bp-ipcomms.bt.com/branding/bt/images/touch-icons/apple-touch-icon.png">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-1536x2008.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="https://bp-ipcomms.bt.com/branding/bt/images/splash-screens/apple-touch-startup-image-2048x1496.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" rel="apple-touch-startup-image">	
+
+		<link rel="shortcut icon" href="https://bp-ipcomms.bt.com/branding/bt/images/favicon.ico">
+		<title>
+			
+				
+				
+					Business Portal
+				
+			
+		</title>
+		
+		<!-- Bootstrap core CSS -->
+		<link href="./UserTimeScheduleForm_files/bootstrap.min.css" rel="stylesheet">
+		<!-- Bootstrap switch CSS -->
+		<link href="./UserTimeScheduleForm_files/bootstrap-switch.css" rel="stylesheet">
+		<!-- Bootstrap DateTimePicker CSS -->
+		<link href="./UserTimeScheduleForm_files/bootstrap-datetimepicker.min.css" rel="stylesheet">
+		<!-- Bootstrap DateRangePicker CSS -->
+		<link href="./UserTimeScheduleForm_files/daterangepicker-bs3.css" rel="stylesheet">
+		<!-- Data Tables CSS -->
+		<link href="./UserTimeScheduleForm_files/jquery.dataTables.css" rel="stylesheet">
+		<!-- FooTable CSS -->
+		<link href="./UserTimeScheduleForm_files/footable.core.min.css" rel="stylesheet">
+		<!-- Add2Home CSS -->
+		<link href="./UserTimeScheduleForm_files/addtohomescreen.css" rel="stylesheet">
+		<!-- Bootstrap Tour -->
+		<link href="./UserTimeScheduleForm_files/hopscotch.min.css" rel="stylesheet">
+		<!-- Select2 CSS -->
+		<link href="./UserTimeScheduleForm_files/select2.min.css" rel="stylesheet">
+		<!-- Core Site styles -->
+		<link href="./UserTimeScheduleForm_files/site.css" rel="stylesheet">
+		
+			<link rel="stylesheet" href="./UserTimeScheduleForm_files/cookie.css" type="text/css">
+		
+		<!-- Theme styles -->
+		<link href="./UserTimeScheduleForm_files/theme.css" rel="stylesheet">
+		<link href="./UserTimeScheduleForm_files/icons.css" rel="stylesheet">
+		<link href="./UserTimeScheduleForm_files/icheck.css" rel="stylesheet">    
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="/businessportal/assets/js/bootstrap/html5shiv.js"></script>
+		<script src="/businessportal/assets/js/bootstrap/respond.min.js"></script>
+		<![endif]-->
+		<script src="./UserTimeScheduleForm_files/jquery-1.10.2.min.js.download"></script>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		
+		<script> 
+			var analyticsAPIKey = '';
+			if (analyticsAPIKey != "") {
+				window.dataLayer = window.dataLayer || [];
+			}
+			
+			function gtag(){dataLayer.push(arguments);}
+			
+			if (analyticsAPIKey != "") {
+				gtag('js', new Date());
+			}
+		
+			function analyticsGetCustomMapping() {
+				return {
+					'dimension1' : 'userDomain',
+					'dimension2' : 'userName',
+					'dimension3' : 'customerName'
+				}
+			}
+			
+			function gaEvent(category, action, label) {
+				if (analyticsAPIKey != "") {
+					gtag('event', action, {
+						 'event_category' : category,
+						 'event_action' : action,
+						 'event_label' : label,
+						 'userDomain' : '',
+						 'userName' : '',
+						 'customerName' : ''
+					});
+				}
+			}
+			
+			function gaPageView(pageTitle) {
+				if (analyticsAPIKey != "") {
+					var config = {
+						 'userDomain' : '',
+						 'userName' : '',
+						 'customerName' : '',
+						 'custom_map' : analyticsGetCustomMapping()
+					};
+					if (pageTitle != null && pageTitle != "") {
+						config.page_title = pageTitle;
+					}
+					gtag('config', analyticsAPIKey, config);
+				}
+			}
+		</script>
+		
+	</head>
+	<body data-gr-c-s-loaded="true" style="">
+		<a class="sr-only" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3BAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#pageTitle">Skip to main content</a>
+
+
+
+	  
+
+	
+	
+		
+  
+	
+  
+  
+
+
+
+
+  
+  
+  
+  
+	<!-- use session as last resort since changing companies means it could be out of date -->
+	
+  
+  
+
+
+
+
+  
+	
+  
+  
+  
+
+
+
+
+  
+  
+  
+	
+  
+
+
+
+	
+
+
+
+	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="tab" aria-selected="false" aria-expanded="false" id="ui-collapse29">
+				<i class="icon-align-justify"></i>
+				<span class="sr-only">Expand Navbar</span>
+			</button>
+			<span class="logo"></span>
+		</div>
+		<div class="navbar-collapse collapse">		
+			
+				<p class="navbar-text">
+					<span class="account-details">
+											
+							<span class="attribute">User: </span><span>Phone@bab.co.uk</span>&nbsp;&nbsp;&nbsp;
+								
+						<!-- 
+										
+							<span class="attribute">Account ID: </span><span>CV10088365</span>
+						
+						 -->
+					</span>
+				</p>
+				<div class="text-right">
+					
+						<p class="navbar-text helpLinkWrapper">
+							
+							<!--<a href="#" id="startSystemTour">Navigation Guide</a>-->
+						</p>
+					
+					
+					
+						
+							
+								<a target="_blank" href="http://www.bt.com/business/btcloudvoice/businessportalguide" class="btn btn-info navbar-btn">Help Setting Up</a>
+								<a target="_blank" href="http://www.bt.com/business/btcloudvoice/userguide" class="btn btn-info navbar-btn">Help Using</a>
+								<a target="_blank" href="http://www.bt.com/business/btcloudvoice/videos" class="btn btn-info navbar-btn">Help Videos</a>
+							
+							
+						
+					
+					
+					<a href="https://bp-ipcomms.bt.com/businessportal/logout.do" class="btn btn-warning navbar-btn">Logout <i class="icon-off"></i></a>
+				</div>
+				
+			
+		</div>
+	</div>
+	
+
+	
+	
+		
+	
+	
+	
+
+<input type="hidden" name="gsRegKey" id="gsRegKey" value="UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice Registration">
+
+
+
+	
+
+						
+
+
+
+
+	
+
+
+<div class="header-dropdown-wrapper">
+	
+	<div id="service-offering-dropdown" class="header-dropdown" style="">
+	
+		<button class="btn closeDropDown" type="button"><i class="icon-remove"></i> Close</button>
+	
+		<div id="serviceOfferingDropdown" class="emptyDiv"></div>
+	</div>
+	
+	
+	<div class="header-dropdown-buttons">
+		
+		
+			<button id="service-offering" type="button" class="btn">
+				Service Offerings
+				<i class="icon-book"></i>
+			</button>
+		
+		
+		
+	</div>
+</div>
+
+<script>
+
+var immediateSubmission = false;
+
+$(document).ready(function() {
+	
+	var oldView = '';
+	var oldViewLevel2 = '';
+
+
+	$("#service-offering").click(function(e) {
+	  e.stopPropagation();
+	  $("#global-search-dropdown").slideUp("fast");
+	  $("#global-search").children("i").removeClass('icon-chevron-up');
+	  $("#global-search").children("i").addClass('icon-search');
+	  
+	  $(this).children("i").toggleClass('icon-book');
+	  $(this).children("i").toggleClass('icon-chevron-up');
+	  $("#service-offering-dropdown").slideToggle( "fast");
+	
+	  if ($(this).children("i").hasClass('icon-chevron-up') && $("#serviceOfferingDropdown").hasClass('emptyDiv')){
+		  var sodurl = "/businessportal/customServices/BusinessVoIP/getserviceofferingdropdown.do";
+		  $.ajax({
+				url : sodurl,
+				type: "GET",
+				data : {serviceOfferinglevel: 'User'},
+				success: function(data, textStatus, jqXHR) {		
+					$("#serviceOfferingDropdown").removeClass('emptyDiv').html(data);
+				}
+			});
+	  }
+	  
+	});
+
+	$("#global-search").click(function(e) {
+
+	  e.stopPropagation();
+	  $("#service-offering-dropdown").slideUp("fast");
+	  $("#service-offering").children("i").removeClass('icon-chevron-up');
+	  $("#service-offering").children("i").addClass('icon-book');
+	  
+	  
+	  
+	  $(this).children("i").toggleClass('icon-search');
+	  $(this).children("i").toggleClass('icon-chevron-up');
+	  $("#global-search-dropdown").slideToggle( "fast", function() {
+		$("#globalSearchString").focus();
+	  });
+	});
+	
+	$(document).on('click','.selectPackage', function(e){
+		e.preventDefault();
+		var level = $(this).data("level");
+		$.ajax({
+			url : $(this).prop('href'),
+			type: "GET",
+			data : {},
+			success: function(data, textStatus, jqXHR) {		    	
+				if("level2" == level){
+					oldViewLevel2 = $("#service-offering-dropdown").html();
+				}
+				else{
+					oldView = $("#service-offering-dropdown").html();
+				}
+				$("#service-offering-dropdown").hide().html(data).fadeIn();
+				
+				$('html, body').animate({
+					scrollTop: 0}, 500);
+			}
+		});
+	});
+	
+	$(document).on('click','#serviceOfferingReturn', function(event){
+		$("#loading").hide();
+		$("#service-offering-dropdown").hide().html(oldView).fadeIn();
+		event.stopPropagation();
+	});
+	
+	$(document).on('click','.closeDropDown', function(event){
+		closeDropDowns();
+	});
+	
+	$(document).on('click','#serviceOfferingReturnLevel2', function(event){
+		$("#loading").hide();
+		$("#service-offering-dropdown").hide().html(oldViewLevel2).fadeIn();
+		event.stopPropagation();
+	});
+
+	$(document).on('click','.clickableRow', function(event){
+		window.document.location = $(this).attr("href");
+	});
+
+	(function($) {
+		$.fn.normalkeypress = function(onNormal, onSpecial) {
+			this.bind('keydown keypress keyup', (function() {
+				var keyDown = {}, // keep track of which buttons have been pressed
+					lastKeyDown;
+				return function(event) {
+					if (event.type == 'keydown') {
+						keyDown[lastKeyDown = event.keyCode] = false;
+						return;
+					}
+					if (event.type == 'keypress') {
+						keyDown[lastKeyDown] = event; // this keydown also triggered a keypress
+						return;
+					}
+
+					// 'keyup' event
+					var keyPress = keyDown[event.keyCode];
+					if ( keyPress &&
+						 ( ( ( keyPress.which >= 32 // not a control character
+							   //|| keyPress.which == 8  || // \b
+							   //|| keyPress.which == 9  || // \t
+							   //|| keyPress.which == 10 || // \n
+							   //|| keyPress.which == 13    // \r
+							   ) &&
+							 !( keyPress.which >= 63232 && keyPress.which <= 63247 ) && // not special character in WebKit < 525
+							 !( keyPress.which == 63273 )                            && //
+							 !( keyPress.which >= 63275 && keyPress.which <= 63277 ) && //
+							 !( keyPress.which === event.keyCode && // not End / Home / Insert / Delete (i.e. in Opera < 10.50)
+								( keyPress.which == 35  || // End
+								  keyPress.which == 36  || // Home
+								  keyPress.which == 45  || // Insert
+								  keyPress.which == 46  || // Delete
+								  keyPress.which == 144    // Num Lock
+								  )
+								)
+							 ) ||
+						   keyPress.which === undefined // normal character in IE < 9.0
+						   ) &&
+						 keyPress.charCode !== 0 // not special character in Konqueror 4.3
+						 ) {
+
+						// Normal character
+						if (onNormal) onNormal.call(this, keyPress, event);
+					} else {
+						// Special character
+						if (onSpecial) onSpecial.call(this, event);
+					}
+					delete keyDown[event.keyCode];
+				};
+			})());
+		};
+	})(jQuery);
+	
+	$("#globalSearchString").normalkeypress(function(e){
+		var searchString = $.trim($(this).val());
+		if(searchString.length > 2){
+			typewatch(function(){ performGlobalSearch('keyup', window.immediateSubmission);}, 500 );
+		} else {
+			$(".search-results-view").addClass('hidden');
+		}
+
+	});
+	
+	
+	$("#globalSearchForm").submit(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		var searchString = $("#globalSearchString").val();
+		if(searchString.length > 2){
+			window.immediateSubmission = true;
+			typewatch(function(){ performGlobalSearch('submit', window.immediateSubmission);}, 0 );
+		} else {
+			$(".search-results-view").addClass('hidden');
+		}
+		return false;
+	});
+	
+	
+	
+	$(".header-dropdown-wrapper").bind( "clickoutside", function(event){
+		closeDropDowns();
+	});
+	
+	$(".header-dropdown-wrapper").bind( "touchstartoutside", function(event){
+		closeDropDowns();
+	});
+});
+
+function closeDropDowns() {
+	$("#global-search-dropdown").slideUp( "fast");
+	$("#service-offering-dropdown").slideUp( "fast");
+	$("#service-offering").children("i").removeClass('icon-chevron-up');
+	$("#service-offering").children("i").addClass('icon-book');
+	$("#global-search").children("i").removeClass('icon-chevron-up');
+	$("#global-search").children("i").addClass('icon-search');
+}
+
+function performGlobalSearch(method, immediateSubmission){
+	if (immediateSubmission == true && method == 'keyup') {
+		window.immediateSubmission = false;
+		return false;
+	}
+	var gsRegKey = $("#gsRegKey").val();
+	var globalSearchUrl = "/businessportal/customServices/BusinessVoIP/performGlobalSearch.do?regKey=" + gsRegKey;
+	
+	$.ajax({
+		url : globalSearchUrl,
+		type: "POST",
+		data: {token:$("#globalSearchString").val()},
+		dataType: "json",
+		success: function(data, textStatus, jqXHR) {
+			//console.log(data);
+			var sitesTable = "";
+			var usersTable = "";
+			var br = "";
+			
+			if($(data.sitesFound).size() != 0){
+				sitesTable = 	"<h4>Sites</h4>" +
+								"<div class='table-responsive'><table class='table table-hover secondary'>" + 
+									"<tr>" +
+										"<th>" +
+											"Site Name" +
+										"</th>" +
+										"<th>" +
+										"</th>" +
+										/*"<th>" +
+											"Org ID" +
+										"</th>" +*/
+									"</tr>";
+				$(data.sitesFound).each(function(i, item){
+					sitesTable += 	"<tr>" +
+										"<td>";
+					if(item.url != null){
+						sitesTable +=		"<a href='" + item.url + "'>" +
+												item.siteName +
+											"</a>";
+					}else{
+						sitesTable +=	item.siteName;
+					}
+					
+					sitesTable +=		"</td>" +
+
+										"<td>";
+					if(item.url != null){
+						sitesTable +=		"<a href='" + item.url +"' class='btn btn-warning btn-sm pull-right'>" +
+												"<i class='icon-screenshot'></i> Select" + 
+											"</a>";
+					}
+					sitesTable +=		"</td>" +
+										/*"<td>" + 
+											item.orgId +
+										"</td>" +*/
+									"</tr>";
+				});
+				sitesTable += "</table></div>";
+			}
+			if($(data.sitesFound).size() != 0 && $(data.usersFound).size() != 0){
+				br = "<br/>"
+			}
+
+			if($(data.usersFound).size() != 0){
+				usersTable = 	"<h4>Users</h4>" +
+								"<div class='table-responsive-large'><table class='table table-hover secondary'>" +
+									"<tr>" +
+										"<th>" +
+											"Username" +
+										"</th>" +
+										"<th>" +
+											"First Name" +
+										"</th>" +
+										"<th>" +
+											"Surname" +
+										"</th>" +
+										"<th>" +
+											"Phone Number" +
+										"</th>" +
+										"<th>" +
+											"Site Name" +
+										"</th>" +
+										"<th>" +
+										"</th>" +
+										/*"<th>" +
+											"Org ID" +
+										"</th>" +*/
+									"</tr>";
+									
+				$(data.usersFound).each(function(i, item){
+					usersTable += 	"<tr>" +
+										"<td>";
+					if(item.url != null){
+						usersTable += 		"<a href='" + item.url + "'>" +
+												item.userName +
+											"</a>";
+					}else{
+						usersTable += item.userName;
+					}
+											
+					usersTable += 		"</td>" +
+										"<td>" + 
+											item.firstName +
+										"</td>" + 
+										"<td>" + 
+											item.lastName +
+										"</td>" + 
+										"<td>" + 
+											item.phoneNumber +
+										"</td>" + 
+										"<td>" + 
+											item.siteName +
+										"</td>" +
+										"<td>";
+					if(item.url != null){
+						usersTable +=		"<a href='" + item.url +"' class='btn btn-warning btn-sm pull-right'>" +
+												"<i class='icon-screenshot'></i> Select" + 
+											"</a>";
+					}
+											
+					usersTable +=		"</td>" +
+									"</tr>";
+									
+				});
+				usersTable += "</table></div>";
+			}
+			
+			if($(data.usersFound).size() == 0 && $(data.sitesFound).size() == 0) {
+				$(".search-results-view .rounded-box").html('<span class="error">No Results Found</span>');
+			} else {
+				$(".search-results-view .rounded-box").html(usersTable + br + sitesTable);
+			}
+
+			
+			$(".search-results-view").removeClass('hidden');
+		},
+		complete: function(jqXHR, textStatus) {
+			window.immediateSubmission = false;
+		}
+	});
+}
+
+var typewatch = function(){
+	var timer = 0;
+	return function(callback, ms){
+		clearTimeout (timer);
+		timer = setTimeout(callback, ms);
+	}  
+}();
+</script>
+	
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+<div class="announcement-banner">
+	
+</div>
+	
+<ul class="nav nav-tabs top-tab" role="tablist"><li class="dropdown pull-right tabdrop hide"><a class="dropdown-toggle" data-toggle="dropdown" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#"><i class="icon-align-justify"></i> <b class="caret"></b></a><ul class="dropdown-menu"></ul></li>	
+	
+	
+		
+		
+
+			
+				
+					
+				
+				
+				
+			
+			<!-- User menu -->
+			
+			<!-- Dashboard -->		
+			
+				
+				
+				
+					
+					
+					
+				
+			
+					
+			<li class="" role="presentation">
+				<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getuserdashboard.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-bar-chart"></i><span class="sr-only"> Dashboard</span><span class="sr-only"> </span></a>
+			</li>
+			
+			<!-- Features -->
+			
+				
+					
+					
+					
+				
+				
+				
+			
+			<li class="active" role="presentation">
+				<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getuserfeatures.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-rocket"></i> Features<span class="sr-only"> Link Active</span></a>
+			</li>
+			
+			<!-- Devices -->
+			
+				
+				
+				
+					
+										
+					
+				
+			
+			<li class="" role="presentation">
+				<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getuserdevicemanagement.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;userName=Phone&amp;SCAmappingFor=devices"><i class="icon-tablet"></i> Devices<span class="sr-only"> </span></a>
+			</li>
+			
+			<!-- Applications -->
+			
+				
+				
+				
+					
+					
+					
+				
+									
+			<li class="" role="presentation">
+				<a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getuserapplications.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-th-large"></i> Applications<span class="sr-only"> </span></a>
+			</li>
+			
+			<!-- Profile -->
+			
+				
+				
+					
+					
+				
+			
+			
+			<li class="" role="presentation">
+				<a href="https://bp-ipcomms.bt.com/businessportal/sectionMyAccount.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration"><i class="icon-edit"></i> My Account<span class="sr-only"> </span></a>
+			</li>
+		
+	
+</ul>
+
+
+<link href="./UserTimeScheduleForm_files/bootstrap-timepicker.min.css" rel="stylesheet">
+<script src="./UserTimeScheduleForm_files/bootstrap-timepicker.js.download"></script>
+
+
+
+
+
+
+
+
+
+  
+	
+  
+  
+  
+
+ 
+
+<div class="page-wrapper">
+	<div class="row-offcanvas row-offcanvas-left">
+		
+				<div class="sidebar sidebar-offcanvas">
+					<!-- COMPANIES -->					
+					<!-- link to companies list -->		
+					
+					
+				</div>
+		
+		<div class="page" style="min-height: 0px;">	
+			
+			<div class="row">
+	<div class="col-sm-6  col-sm-push-6">
+		
+			<div class="object-select">					
+				<!-- company name -->
+				
+					<!-- customer selected -->
+					Company: <strong>BAB</strong><br>
+				
+				
+				<!--  site name -->
+				
+				
+				<!-- employee name -->
+				
+					
+					
+						<!-- customer selected but not employee -->
+													
+					
+					
+				
+				
+				
+				<!-- group name -->
+				
+					
+						
+					
+					
+				
+				
+			</div>
+		
+	</div>
+	<div class="col-sm-6 col-sm-pull-6 titleWrapper">
+		
+		<h1 id="pageTitle" class="pageTitle">
+			Features
+
+			
+				
+					
+						›
+						Time Schedules
+					
+				
+			
+
+				
+		</h1>
+
+	</div>
+
+
+</div>
+
+
+	
+	
+		
+			
+				
+			
+		
+	
+
+
+
+			
+<div id="messageBox">
+	
+	
+</div>	
+			
+			<div class="well">
+				
+	<ol class="breadcrumb">
+		
+			
+			
+				
+				
+					<li><a class="action" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getuserfeatures.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration">Employee Features</a></li>
+				
+			
+		
+			
+			
+				
+				
+					<li><a class="action" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/listusertimeschedules.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration">Time Schedules</a></li>
+				
+			
+		
+			
+			
+				
+					<li class="active">D Thursday 22:00 - Friday 10:00 Employee Time Schedule</li>
+				
+				
+			
+		
+	</ol>
+
+				<div class="rounded-box">
+					
+					<div class="row">
+	<div class="col-sm-8">
+		<h4 class="subtitle">Edit Employee Time Schedule</h4>
+	</div>
+	
+	 
+	<div class="col-sm-4">
+		
+		<button class="btn btn-warning pull-right" id="startPageTour"><i class="icon-question"></i> Assistance</button>
+		<div class="clearfix"></div>
+		<br class="visible-xs">
+		
+	</div>
+	 
+	
+</div>
+
+<!--[if lt IE 9]>
+<style>
+	#startPageTour{display:none;}
+</style>
+<![endif]-->
+					
+					<form name="UserTimeScheduleForm" method="post" action="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/setusertimeschedule.do" id="setusertimeschedule">
+						
+						<input type="hidden" name="schedule" value="D Thursday 22:00 - Friday 10:00">
+						<input type="hidden" name="name" value="D Thursday 22:00 - Friday 10:00">
+						<input type="hidden" name="type" value="Personal">
+						<input type="hidden" name="focus" value="startTime0">
+						<input type="hidden" name="ampm" value="true">
+						
+						
+												
+						
+						
+						
+						
+						<p class="form-control-static">
+							 Time Schedule Name:
+							<strong>D Thursday 22:00 - Friday 10:00</strong>
+							 
+								   (Employee)
+							
+							
+						</p>
+						<br>
+
+						
+						<div class="table-responsive overthrow"><table id="searchResults" class="table secondary">
+							<thead>
+								<tr>
+									<th scope="col" id="startDayCol">Start Day</th>
+									<th scope="col" id="startTimeCol">Start Time (HH:mm)</th>
+									<th scope="col" id="endDayCol">End Day</th>
+									<th scope="col" id="endTimeCol">End Time (HH:mm)</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+									
+										
+										
+											
+										
+									
+									<tr class="">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay0">Start Day</label>
+
+												<select name="startDay[0]" class="form-control" id="startDay0"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4" selected="selected">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime0">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[0]" value="22:1" class="form-control timepicker" id="startTime0">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay0">End Day</label>
+												<select name="endDay[0]" class="form-control" id="endDay0"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5" selected="selected">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime0">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[0]" value="10:0" class="form-control timepicker" id="endTime0">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay1">Start Day</label>
+
+												<select name="startDay[1]" class="form-control" id="startDay1"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime1">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[1]" value="" class="form-control timepicker" id="startTime1">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay1">End Day</label>
+												<select name="endDay[1]" class="form-control" id="endDay1"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime1">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[1]" value="" class="form-control timepicker" id="endTime1">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay2">Start Day</label>
+
+												<select name="startDay[2]" class="form-control" id="startDay2"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime2">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[2]" value="" class="form-control timepicker" id="startTime2">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay2">End Day</label>
+												<select name="endDay[2]" class="form-control" id="endDay2"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime2">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[2]" value="" class="form-control timepicker" id="endTime2">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay3">Start Day</label>
+
+												<select name="startDay[3]" class="form-control" id="startDay3"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime3">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[3]" value="" class="form-control timepicker" id="startTime3">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay3">End Day</label>
+												<select name="endDay[3]" class="form-control" id="endDay3"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime3">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[3]" value="" class="form-control timepicker" id="endTime3">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay4">Start Day</label>
+
+												<select name="startDay[4]" class="form-control" id="startDay4"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime4">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[4]" value="" class="form-control timepicker" id="startTime4">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay4">End Day</label>
+												<select name="endDay[4]" class="form-control" id="endDay4"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime4">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[4]" value="" class="form-control timepicker" id="endTime4">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay5">Start Day</label>
+
+												<select name="startDay[5]" class="form-control" id="startDay5"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime5">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[5]" value="" class="form-control timepicker" id="startTime5">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay5">End Day</label>
+												<select name="endDay[5]" class="form-control" id="endDay5"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime5">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[5]" value="" class="form-control timepicker" id="endTime5">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay6">Start Day</label>
+
+												<select name="startDay[6]" class="form-control" id="startDay6"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime6">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[6]" value="" class="form-control timepicker" id="startTime6">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay6">End Day</label>
+												<select name="endDay[6]" class="form-control" id="endDay6"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime6">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[6]" value="" class="form-control timepicker" id="endTime6">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay7">Start Day</label>
+
+												<select name="startDay[7]" class="form-control" id="startDay7"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime7">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[7]" value="" class="form-control timepicker" id="startTime7">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay7">End Day</label>
+												<select name="endDay[7]" class="form-control" id="endDay7"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime7">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[7]" value="" class="form-control timepicker" id="endTime7">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay8">Start Day</label>
+
+												<select name="startDay[8]" class="form-control" id="startDay8"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime8">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[8]" value="" class="form-control timepicker" id="startTime8">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay8">End Day</label>
+												<select name="endDay[8]" class="form-control" id="endDay8"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime8">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[8]" value="" class="form-control timepicker" id="endTime8">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay9">Start Day</label>
+
+												<select name="startDay[9]" class="form-control" id="startDay9"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime9">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[9]" value="" class="form-control timepicker" id="startTime9">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay9">End Day</label>
+												<select name="endDay[9]" class="form-control" id="endDay9"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime9">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[9]" value="" class="form-control timepicker" id="endTime9">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay10">Start Day</label>
+
+												<select name="startDay[10]" class="form-control" id="startDay10"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime10">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[10]" value="" class="form-control timepicker" id="startTime10">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay10">End Day</label>
+												<select name="endDay[10]" class="form-control" id="endDay10"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime10">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[10]" value="" class="form-control timepicker" id="endTime10">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay11">Start Day</label>
+
+												<select name="startDay[11]" class="form-control" id="startDay11"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime11">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[11]" value="" class="form-control timepicker" id="startTime11">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay11">End Day</label>
+												<select name="endDay[11]" class="form-control" id="endDay11"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime11">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[11]" value="" class="form-control timepicker" id="endTime11">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay12">Start Day</label>
+
+												<select name="startDay[12]" class="form-control" id="startDay12"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime12">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[12]" value="" class="form-control timepicker" id="startTime12">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay12">End Day</label>
+												<select name="endDay[12]" class="form-control" id="endDay12"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime12">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[12]" value="" class="form-control timepicker" id="endTime12">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay13">Start Day</label>
+
+												<select name="startDay[13]" class="form-control" id="startDay13"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime13">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[13]" value="" class="form-control timepicker" id="startTime13">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay13">End Day</label>
+												<select name="endDay[13]" class="form-control" id="endDay13"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime13">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[13]" value="" class="form-control timepicker" id="endTime13">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay14">Start Day</label>
+
+												<select name="startDay[14]" class="form-control" id="startDay14"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime14">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[14]" value="" class="form-control timepicker" id="startTime14">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay14">End Day</label>
+												<select name="endDay[14]" class="form-control" id="endDay14"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime14">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[14]" value="" class="form-control timepicker" id="endTime14">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay15">Start Day</label>
+
+												<select name="startDay[15]" class="form-control" id="startDay15"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime15">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[15]" value="" class="form-control timepicker" id="startTime15">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay15">End Day</label>
+												<select name="endDay[15]" class="form-control" id="endDay15"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime15">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[15]" value="" class="form-control timepicker" id="endTime15">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay16">Start Day</label>
+
+												<select name="startDay[16]" class="form-control" id="startDay16"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime16">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[16]" value="" class="form-control timepicker" id="startTime16">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay16">End Day</label>
+												<select name="endDay[16]" class="form-control" id="endDay16"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime16">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[16]" value="" class="form-control timepicker" id="endTime16">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay17">Start Day</label>
+
+												<select name="startDay[17]" class="form-control" id="startDay17"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime17">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[17]" value="" class="form-control timepicker" id="startTime17">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay17">End Day</label>
+												<select name="endDay[17]" class="form-control" id="endDay17"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime17">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[17]" value="" class="form-control timepicker" id="endTime17">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay18">Start Day</label>
+
+												<select name="startDay[18]" class="form-control" id="startDay18"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime18">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[18]" value="" class="form-control timepicker" id="startTime18">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay18">End Day</label>
+												<select name="endDay[18]" class="form-control" id="endDay18"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime18">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[18]" value="" class="form-control timepicker" id="endTime18">
+												
+													
+											
+										</td>
+									</tr>
+								
+									
+										
+											
+										
+										
+									
+									<tr class="hidden">
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="startDay19">Start Day</label>
+
+												<select name="startDay[19]" class="form-control" id="startDay19"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="startTime19">Start Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="startTime[19]" value="" class="form-control timepicker" id="startTime19">
+												
+												
+											
+										</td>
+										<td>
+											<div class="readonlyBox">
+												<label class="sr-only" for="endDay19">End Day</label>
+												<select name="endDay[19]" class="form-control" id="endDay19"><option value="-1">Select</option>
+													<option value="0">Sunday</option>
+													<option value="1">Monday</option>
+													<option value="2">Tuesday</option>
+													<option value="3">Wednesday</option>
+													<option value="4">Thursday</option>
+													<option value="5">Friday</option>
+													<option value="6">Saturday</option></select>
+											</div>
+										</td>
+										<td>
+											<label class="sr-only" for="endTime19">End Time (HH:mm)</label> 
+											
+												
+													<input type="text" name="endTime[19]" value="" class="form-control timepicker" id="endTime19">
+												
+													
+											
+										</td>
+									</tr>
+								
+								
+									<tr id="addAnotherRow">
+										<td colspan="4">
+											<button type="button" id="addAnother" class="btn btn-success">
+												<i class="icon-plus"></i>
+												Add Another
+											</button>
+										</td>
+									</tr>
+								
+							</tbody>
+						</table></div>
+
+						<input type="hidden" name="SubmitButton" id="submitButton">
+						<input type="hidden" name="regKey" value="UsersOrgUnit=Users,UsersOrgUnit=Customers,UsersOrgUnit=BTCloudVoice,Organization=BAB,GroupUsersOrgUnit=Users,User=Phone,Registration=BTCloudVoice Registration" id="regKey">
+						<input type="hidden" name="rowCounter" value="1" id="rowNum">
+						<input type="hidden" name="operation" value="modify">
+						<br>
+
+
+						<div class="row" id="saveButtonRow">
+									
+								 
+									<div class="col-lg-9 col-md-8 col-lg-push-3 col-md-push-4">
+										<button type="submit" class="btn btn-lg btn-block btn-success" id="saveButton" onclick="javascript:$(&#39;#submitButton&#39;).val(&#39;Ok&#39;);"><i class="icon-ok"></i> Save</button>								
+									</div>
+									<br class="hidden-md hidden-lg">
+														
+										
+								
+								<div class="col-lg-3 col-md-4 col-lg-pull-9 col-md-pull-8">
+									<button type="submit" class="btn btn-lg btn-block btn-warning" onclick="javascript:$(&#39;#submitButton&#39;).val(&#39;Cancel&#39;);"><i class="icon-ban-circle"></i> Cancel</button>
+								</div>
+							</div>
+						
+						
+					</form>
+<script type="text/javascript" language="JavaScript">
+  <!--
+  var focusControl = document.forms["UserTimeScheduleForm"].elements["startTime0"];
+
+  if (focusControl.type != "hidden" && !focusControl.disabled) {
+	 focusControl.focus();
+  }
+  // -->
+</script>
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		
+	
+		var rowCounter = 1;
+	
+		$("#addAnother").click(
+				function(e) {
+					$("#searchResults tr:nth-child(" + (rowCounter + 1) + ")")
+							.removeClass('hidden');
+					$("#rowNum").val(rowCounter);
+					rowCounter++;
+					if (rowCounter == 20) {
+						$("#addAnother").prop('disabled', true);
+					}
+				});
+	
+		if (rowCounter == 20) {
+			$("#addAnother").prop('disabled', true);
+		}
+	
+		$("#saveButton").click(function(e) {
+			var canSubmit = false;
+			$("#searchResults tbody tr input").each(function() {
+				if($.trim($(this).val()) != '') {
+					canSubmit = true;
+				}
+			});
+			if(!canSubmit){
+				alert("Please provide at least Time Range before continuing.")
+				e.preventDefault();
+				return false;
+			}
+		});
+	
+		$("#searchResults").wrap("<div class='table-responsive overthrow'></div>");
+	
+		$('.timepicker').timepicker({
+			minuteStep : 1,
+			showInputs : false,
+			disableFocus : true,
+			defaultTime : false,
+			disableMousewheel : true,
+			showMeridian : false
+		});
+	
+		handleReadonly();
+		
+		var tour = {
+				  id: "timeScheduleAddTour",
+				  showPrevButton: true,
+				  i18n:{
+					  nextBtn: "Next",
+					  prevBtn: "Back"
+				  },
+				  steps: [
+							{
+								content: "For each time period complete a row in the table below.",
+								target: "#searchResults",  
+								placement: "top"
+							},
+							{
+								content: "Use the drop-down in this column to select the start day of the time period.",
+								target: "#startDayCol",  
+								placement: "top"
+							},
+							{
+								content: "Use the time picker in this column to select the start time of the time period.",
+								target: "#startTimeCol",  
+								placement: "top"
+							},
+							{
+								content: "Use the drop-down in this column to select the end day of the time period.",
+								target: "#endDayCol",  
+								placement: "top"
+							},
+							{
+								content: "Use the time picker in this column to select the end time of the time period.",
+								target: "#endTimeCol",  
+								placement: "top"
+							},
+							{
+								content: "By default, not all rows are visible in the Time Schedule table. To add more rows simply click Add Another. You can add up to 20 time periods per Time Schedule.",
+								target: "#addAnother",  
+								placement: "top"
+							},
+							{
+								content: "Save your changes or cancel without saving.",
+								target: "#saveButtonRow",  
+								placement: "top"
+							}
+						  ]
+				};   
+				
+				$("#startPageTour").click(function() {
+					hopscotch.startTour(tour);
+				});
+		});
+	
+		function handleReadonly() {
+	
+			var readonlyPage = $("#readonlyPage").val();
+	
+			if (readonlyPage == "true") {
+				$(".readonlyBox select").addClass('readonly');
+				$(".readonlyBox option:not(:selected)").prop('disabled', 'true');
+			}
+	
+		}
+	
+</script>
+
+
+<script>
+	gaPageView('Features - Time Schedules');
+</script>
+
+			<div class="footer ">
+				
+				
+					<p class="footer-text text-right">
+						
+						
+						
+						
+						
+						
+						
+					</p>
+			</div>
+		
+		<img id="loading" class="loadingGif" alt="Loading" src="./UserTimeScheduleForm_files/loading.gif">
+		 
+		<script src="./UserTimeScheduleForm_files/jquery.validate.min.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/jquery.cookie.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/jquery.placeholder.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/bootstrap.min.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/bootstrap-accessibility.min.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/bootstrap-switch.min.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/jquery.dataTables.min.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/footable.min.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/footable.paginate.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/bootstrap-tabdrop.js.download"></script>
+		
+		<script src="./UserTimeScheduleForm_files/overthrow.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/jquery.ba-outside-events.min.js.download"></script>
+		<!--[if !IE]><!--><script src="./UserTimeScheduleForm_files/addtohomescreen.min.js.download"></script><!--<![endif]-->
+		<script src="./UserTimeScheduleForm_files/hopscotch.min.js.download"></script>
+		<script src="./UserTimeScheduleForm_files/select2.full.min.js.download"></script>
+
+		
+			
+			
+				<script src="./UserTimeScheduleForm_files/jquery.icheck.min.js.download"></script>
+				<script>
+					$(document).ready(function() {
+						$('input.radio, input.checkbox').iCheck({
+							checkboxClass: 'icheckbox_flat-green',  
+							radioClass: 'iradio_flat-green'
+						});
+					});
+				</script>
+			
+		
+		
+		<script src="./UserTimeScheduleForm_files/site.js.download"></script>
+		<script>
+		
+		$(document).ready(function() {
+			
+			
+			$('[data-toggle=offcanvas]').click(function() {
+				
+				$('.row-offcanvas-inner').toggleClass('active');
+			});
+
+			$("form:not(.withoutSpinner)").on("submit", showSpinner);
+			
+			$(".make-switch").bootstrapSwitch('setOnLabel', 'On');
+			$(".make-switch").bootstrapSwitch('setOffLabel', 'Off');
+			
+			$(".has-switch").on('switch-change', function (e, r) {
+				$(this).attr('aria-checked', r.value.toString());		    
+			});
+			$(".has-switch").each(function() {
+				$(this).attr('role', 'checkbox');
+				$(this).attr('aria-checked', $(this).bootstrapSwitch('status').toString());
+			});
+			
+			if($(".sidebar a").size() > 0) {
+				var startX = 0;
+				var startY = 0;
+				
+				var endX = 0;
+				var endY = 0;
+				
+				var buffer = 30;
+				
+				window.swiping = false;
+				
+				
+				$('.row-offcanvas').on("touchstart", function(ev) {
+					var e = ev.originalEvent;
+					startX = e.touches[0].clientX;
+					startY = e.touches[0].clientY;
+					
+					var sidebarLeft = $('.sidebar').offset().left+$('.sidebar').width()-buffer;
+					
+					
+					if($(this).hasClass('active')) {
+						var sidebarRight = $(window).width();
+					} else {
+						var sidebarRight = buffer;
+					}
+					
+					window.swiping = false;
+					
+					if(startX >= sidebarLeft && startX <= sidebarRight && !$(e.changedTouches[0].target).hasClass('sidebar-expander') && !$(e.changedTouches[0].target).hasClass('icon-align-justify') && $(window).width() <= 768) {
+						window.swiping = true;
+					} else {
+						window.swiping = false;
+					}
+				});
+				
+				$('.row-offcanvas').on("touchmove", function(ev) {
+					var e = ev.originalEvent;
+					endX = e.touches[0].clientX;
+					endY = e.touches[0].clientY;
+					
+					if(Math.abs(endX-startX)>Math.abs(endY-startY)) {
+						if(window.swiping && endX<=80 && endX>=0) {
+							e.preventDefault();
+							$(this).css({left : endX});
+							$(this).css('-webkit-transition', 'none');
+							$(this).css('-moz-transition', 'none');
+							$(this).css('transition', 'none');
+						}
+					}
+					
+					
+			
+			
+			
+				});
+				
+				$('.row-offcanvas').on("touchend", function(ev) {
+
+					if(window.swiping) {
+						window.swiping=false;
+						
+						if($(this).hasClass('active')) {
+							var triggerPoint = 50;
+						} else {
+							var triggerPoint = 30;
+						}
+						
+						if(endX < triggerPoint) {
+							
+							$(this).stop().animate({left : 0}, 'fast', null, function() {
+								$(this).css('left', '');
+								$(this).css('-webkit-transition', 'all 0.25s ease-out');
+								$(this).css('-moz-transition', 'all 0.25s ease-out');
+								$(this).css('transition', 'all 0.25s ease-out');
+								$(this).removeClass('active');
+								$('.row-offcanvas-inner').removeClass('active');
+							});
+
+						} else if (endX >= triggerPoint) {
+							$(this).stop().animate({left : 80}, 'fast', null, function() {
+								$(this).css('left', '');
+								$(this).css('-webkit-transition', 'all 0.25s ease-out');
+								$(this).css('-moz-transition', 'all 0.25s ease-out');
+								$(this).css('transition', 'all 0.25s ease-out');
+								$(this).addClass('active');
+								$('.row-offcanvas-inner').addClass('active');
+							});
+
+						}
+					}
+
+				});
+				
+
+			}
+			
+			
+		});
+		
+		$( document ).ajaxError(function( event, jqxhr, settings, exception ) {
+			if(jqxhr.status === 401) {
+				alert("Please sign in. (Your session may have expired.)");
+				window.location.replace("/businessportal");
+			} else if (jqxhr.status === 0) {
+				alert("Unable to connect to server. Please check your connection.");
+			}
+		});
+		
+		$(document).ajaxStart(function () {
+			showSpinner();
+		}).ajaxStop(function () {
+			$("#loading").hide();
+		});
+		
+		
+		function showSpinner() {
+			$("#loading").remove();
+			$('body').append('<img id="loading" class="loadingGif" style="display:block;" alt="Loading" src="/branding/bt/images/loading.gif" />');
+		}
+
+		</script>
+		<!--[if !IE]><!-->
+			<script src="./UserTimeScheduleForm_files/addtohome.js.download" type="text/javascript"></script>
+		<!--<![endif]-->
+		
+			
+				<script src="./UserTimeScheduleForm_files/jquery-migrate-1.2.1.js.download" type="text/javascript"></script>
+				<script src="./UserTimeScheduleForm_files/cookie.js.download" type="text/javascript"></script>
+			
+			
+		
+	
+
+
+
+
+
+
+<div id="cookiesToolbar"><div id="cookiesToolbarContainer"><ul><li class="iconNeccesary"><a class="cookieTip active" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#strictlyNeccesaryTooltip">Strictly necessary</a></li><li class="iconPerformance"><a class="cookieTip active" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#performanceTooltip">Performance</a></li><li class="iconFunctional"><a class="cookieTip active" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#functionalTooltip">Functional</a></li><li class="iconSharing"><a class="cookieTip active" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#sharingTooltip">Sharing &amp; Targeting</a></li></ul><p><a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#" class="cookieLightbox" rel="yourCookieSettings">Change cookie settings</a></p><span id="cookiesHelp"><a class="cookieTip" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#cookieHelpTooltip">Help</a></span></div></div><div id="cookieOverlay">&nbsp;</div><div id="yourCookieSettings"><a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#" id="close" title="">Close</a><h2>Your cookie settings</h2><form method="post" action="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#"><p>Cookies are very small text files that are stored on your computer when you visit some websites.</p><p>We use cookies to make our website easier for you to use. You can remove any cookies already stored on your computer, but these may prevent you from using parts of our website.</p><p>Use the slider below to see the different types of cookies you can choose to allow.</p><div id="cookieWrapper" class="clearfix"><div class="cookieContainer clearfix"><h2>Drag the slider across to change your cookie settings</h2><div class="cookieNecessaryPerformance"><input id="necessaryPerformance" type="checkbox" checked="true" name="necessaryPerformance"><label tabindex="0" for="necessaryPerformance">Strictly necessary &amp; Performance</label></div><div class="maskContainer"><ul class="cookieSlider"><li class="cookieFunctional"><input id="functional" type="checkbox" checked="true" name="functional"><label for="functional">Functional</label></li><li class="cookieSharing"><input id="sharingTargeting" type="checkbox" checked="true" name="sharingTargeting"><label for="sharingTargeting">Targeting</label></li></ul></div></div><div id="detailsContainer" aria-live="assertive" aria-atomic="true"><div id="details"><div class="neccesaryPerformanceList clearfix"><div class="detailsColumnWill"><h3 class="will">This website will:</h3><ul class="willList"><li>Remember what is in your shopping basket</li><li>Remember how far you are through an order</li></ul></div><div class="detailsColumnWillNot"><h3 class="willNot">This website will not:</h3><ul class="willNotList"><li>Allow you to share pages with social networks like Facebook</li><li>Allow you to comment on blogs</li><li>Send information to other websites so that advertising is more relevant to you</li><li>Remember your log-in details</li><li>Improve overall performance of the website</li><li>Provide you with live, online chat support</li></ul></div></div><div class="functionalList clearfix"><div class="detailsColumnWill"><h3 class="will">This website will:</h3><ul class="willList"><li>Remember what is in your shopping basket</li><li>Remember how far you are through an order</li><li>Remember your log-in details</li><li>Make sure you're secure when logged in to the website</li><li>Make sure the website looks consistent</li><li>Offer live chat support</li></ul></div><div class="detailsColumnWillNot"><h3 class="willNot">This website will not:</h3><ul class="willNotList"><li>Allow you to share pages with social networks like Facebook</li><li>Allow you to comment on blogs</li><li>Send information to other websites so that advertising is more relevant to you</li></ul></div></div><div class="sharingList clearfix"><div class="detailsColumnWill"><h3 class="will">This website will:</h3><ul class="willList"><li>Remember what is in your shopping basket</li><li>Remember how far you are through an order</li><li>Remember your log-in details</li><li>Make sure your logged in areas are secure</li><li>Offer live chat support</li><li>Make sure the website looks consistent</li><li>Allow you to share pages with social networks like Facebook</li><li>Allow you to comment on blogs</li><li>Send information to other websites so that advertising is more relevant to you</li></ul></div><div class="detailsColumnWillNot"><h3 class="willNot">This website will not:</h3></div></div></div></div></div><div id="cookieFooter"><p><a class="arrow" target="_blank" href="https://www.bt.com/static/includes/globalheader/cookies/more-about-cookies.html">Find out more about Cookies</a></p><div class="cookieSubmit"><p><a href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#">Cancel</a></p><div class="cookieButton cookieButtonBlue buttonSelected"><input class="submitCookie" type="submit" value="Save and close"></div></div></div></form></div><div id="cookieNotification" style="display: none;"><p>The cookie settings on this website are set to 'allow all cookies' to give you the very best experience. If you continue without changing these settings, you consent to this - but if you want, you can change your settings at any time at the bottom of this page.</p><div id="cookieActions"><a class="cookieButton changeNow" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#">Change settings</a><a class="cookieButton lastButton" href="https://bp-ipcomms.bt.com/businessportal/customServices/BusinessVoIP/getusertimeschedule.do?regKey=UsersOrgUnit%3DUsers%2CUsersOrgUnit%3DCustomers%2CUsersOrgUnit%3DBTCloudVoice%2COrganization%3DBAB%2CGroupUsersOrgUnit%3DUsers%2CUser%3DPhone%2CRegistration%3DBTCloudVoice+Registration&amp;schedule=D+Thursday+22%3A00+-+Friday+10%3A00&amp;scheduleType=Personal#">No, thanks</a></div><p><a class="arrow" target="_blank" href="https://www.bt.com/static/includes/globalheader/cookies/more-about-cookies.html">Find out more about Cookies</a></p></div><div class="cookieTooltip" id="strictlyNeccesaryTooltip"><div class="inner"><p><strong>Strictly necessary cookies</strong></p><p>These cookies enable services you have asked for. This information is not used for advertising on other sites.</p></div></div><div class="cookieTooltip" id="performanceTooltip"><div class="inner"><p><strong>Performance cookies</strong></p><p>These cookies collect anonymous information on the pages visited. This information is not used for advertising on other sites.</p></div></div><div class="cookieTooltip" id="functionalTooltip"><div class="inner"><p><strong>Functional cookies</strong></p><p>These cookies remember choices you make to improve your experience. This information is not used for advertising on other sites.</p></div></div><div class="cookieTooltip" id="sharingTooltip"><div class="inner"><p><strong>Targeting cookies</strong></p><p>These cookies share information about your browsing habits with 3rd parties to help make advertising relevant to you and your interests.</p></div></div><div class="cookieTooltip" id="cookieHelpTooltip"><div class="inner"><p>Privacy settings allow you to enable or disable cookies. We use cookies to improve your experience on our website.</p></div></div></body></html>
